@@ -35,8 +35,10 @@ poweroff
 # Step 6
 ```bash
 nmcli device wifi connect <ssid> password <password>
-cd /etc/nixos
+sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
+sudo nix-channel --update
 rm -rf ~/.config
+cd /etc/nixos
 home-manager switch --flake .#wioenena
 xdg-user-dirs-update
 ```
