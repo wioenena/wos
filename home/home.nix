@@ -9,6 +9,7 @@
   imports = [
     ./programs
     ./theme
+    ./services
     ./nixpkgs.nix
   ];
 

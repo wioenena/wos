@@ -35,10 +35,10 @@ poweroff
 # Step 6
 ```bash
 nmcli device wifi connect <ssid> password <password>
-xdg-user-dirs-update
 cd /etc/nixos
 rm -rf ~/.config
 home-manager switch --flake .#wioenena
+xdg-user-dirs-update
 ```
 
 # Images

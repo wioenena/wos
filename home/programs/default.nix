@@ -36,27 +36,8 @@
     spotify
 
     # Tools
-    libarchive
-    p7zip
-    rar
-    zip
-    unzip
-    colordiff
-    lsd
-    duf
-    ncdu
     xdg-user-dirs
-    findutils
-    diffutils
-    hex
-    jq
-    emote
-    neofetch
-    htop
-    btop
-    bat
     file
-    direnv
 
     # Nix language server
     nixd
