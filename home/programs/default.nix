@@ -9,7 +9,6 @@
     ./discord.nix
     ./brave.nix
     ./kitty.nix
-    ./cava.nix
     ./obs.nix
     ./git.nix
     ./shell.nix
