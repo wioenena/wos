@@ -10,7 +10,7 @@ let
   layout = "dwindle";
   rounding = "0";
   blurSize = "3";
-  cursorSize = "18";
+  cursorSize = "24";
   cursorTheme = "material_dark_cursors";
 in
 ''

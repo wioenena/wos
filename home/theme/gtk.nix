@@ -16,7 +16,7 @@
 
     cursorTheme = {
       name = "material_dark_cursors";
-      size = 18;
+      size = 24;
     };
 
     font = {
