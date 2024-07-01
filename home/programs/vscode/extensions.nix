@@ -339,11 +339,5 @@ with pkgs;
         version = "5.2.12";
         sha256 = "sha256-WGDEizYG6UAqe1jnhvjfFouXDA9Yr5P+BjxPahAIsTE=";
       }
-      {
-        name = "direnv";
-        publisher = "mkhl";
-        version = "0.17.0";
-        sha256 = "sha256-9sFcfTMeLBGw2ET1snqQ6Uk//D/vcD9AVsZfnUNrWNg=";
-      }
     ];
 }

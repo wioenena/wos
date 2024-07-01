@@ -40,5 +40,7 @@
 
     # Nix language server
     nixd
+
+    vlc # Video player
   ];
 }
