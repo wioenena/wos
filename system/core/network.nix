@@ -6,5 +6,6 @@
     networkmanager = {
       enable = true;
     };
+
   };
 }
