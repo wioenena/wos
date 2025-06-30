@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ./hyprland
     ./kitty.nix
     ./git.nix
     ./brave.nix
