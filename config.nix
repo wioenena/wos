@@ -19,9 +19,11 @@
       "spotify"
     ];
 
-  boot.kernelParams = [
-    "i915.force_probe=46a8" # intel 12th Gen (Alder Lake)
-  ];
+  boot = {
+    kernelParams = [
+      "i915.force_probe=46a8" # intel 12th Gen (Alder Lake)
+    ];
+  };
 
   hardware = {
     graphics.extraPackages = with pkgs; [
