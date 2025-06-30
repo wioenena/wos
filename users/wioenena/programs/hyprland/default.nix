@@ -20,9 +20,11 @@ in
       ];
 
       general = {
-        gaps_in = 5;
-        gaps_out = 20;
+        gaps_in = 2;
+        gaps_out = 5;
+
         border_size = 2;
+        no_border_on_floating = true;
 
         "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
         "col.inactive_border" = "rgba(595959aa)";
@@ -31,11 +33,17 @@ in
 
         allow_tearing = false;
         layout = "dwindle";
+
+        snap = {
+          enabled = true;
+          border_overlap = true;
+          respect_gaps = true;
+        };
       };
 
       decoration = {
-        rounding = 10;
-        rounding_power = 2;
+        rounding = 5;
+        rounding_power = 10;
 
         active_opacity = 1.0;
         inactive_opacity = 1.0;
@@ -93,6 +101,8 @@ in
       misc = {
         force_default_wallpaper = -1;
         disable_hyprland_logo = false;
+        enable_swallow = true;
+        swallow_regex = "^(kitty)$";
       };
 
       xwayland = {
@@ -110,6 +120,11 @@ in
 
       gestures = {
         workspace_swipe = false;
+      };
+
+      ecosystem = {
+        no_update_news = true;
+        no_donation_nag = true;
       };
 
       bind = [
