@@ -43,7 +43,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${wosCfg.user.username} = ./users/${wosCfg.user.username}/home.nix;
-            home-manager.extraSpecialArgs = { inherit wosCfg pkgs-unstable; };
+            home-manager.extraSpecialArgs = { inherit inputs wosCfg pkgs-unstable; };
           }
         ];
       };
