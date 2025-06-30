@@ -30,6 +30,7 @@
     # Tools
     xdg-user-dirs
     file
+    bat
 
     # Nix language server
     nixd
