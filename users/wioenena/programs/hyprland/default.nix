@@ -4,6 +4,11 @@ let
   terminal = "kitty";
 in
 {
+  home.packages = with pkgs; [
+    hyprpicker
+    hyprcursor
+  ];
+
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;

@@ -2,6 +2,7 @@
 {
   imports = [
     ./hyprland
+    ./waybar
     ./kitty.nix
     ./git.nix
     ./brave.nix
@@ -36,5 +37,8 @@
     nixd
 
     vlc # Video player
+
+    # Wayland
+    wl-clipboard
   ];
 }
