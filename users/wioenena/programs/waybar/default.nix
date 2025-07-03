@@ -1,9 +1,9 @@
-{ ...}:{
-programs.waybar = {
-enable=true;
-settings=[
+{ ... }:
+{
+  programs.waybar = {
+    enable = true;
+    settings = [
 
-];
-};
+    ];
+  };
 }
-

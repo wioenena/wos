@@ -8,6 +8,7 @@
   imports = [
     ./services
     ./programs
+    ./dconf.nix
   ];
 
   home.username = wosCfg.user.username;

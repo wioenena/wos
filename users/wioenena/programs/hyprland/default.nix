@@ -24,6 +24,10 @@ in
         "HYPRCURSOR_SIZE,${cursorSize}"
       ];
 
+      exec-once = [
+        "waybar"
+      ];
+
       general = {
         gaps_in = 2;
         gaps_out = 5;
