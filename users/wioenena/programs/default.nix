@@ -45,5 +45,6 @@
     noto-fonts
     noto-fonts-cjk-sans
     font-awesome
+
   ];
 }

@@ -6,5 +6,6 @@
     ./hyprland.nix
     ./homeManager.nix
     ./utils.nix
+    ./dconf.nix
   ];
 }
