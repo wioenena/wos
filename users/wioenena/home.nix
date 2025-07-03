@@ -9,6 +9,7 @@
     ./services
     ./programs
     ./dconf.nix
+    ./gtk.nix
   ];
 
   home.username = wosCfg.user.username;
