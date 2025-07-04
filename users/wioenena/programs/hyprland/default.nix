@@ -144,7 +144,8 @@ in
         "$mod , V, togglefloating,"
         #        "$mod , R, exec, $menu"
         "$mod , P, pseudo, # dwindle"
-        "$mod , J, togglesplit, # dwindle"
+        # "$mod , J, togglesplit, # dwindle"
+        "$mod , F, fullscreen"
 
         # Move focus with mainMod + arrow keys
         "$mod , l, movefocus, l"

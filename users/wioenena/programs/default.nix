@@ -6,6 +6,7 @@
     ./kitty.nix
     ./git.nix
     ./brave.nix
+    ./astal.nix
   ];
 
   home.packages = with pkgs; [
