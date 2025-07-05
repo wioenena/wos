@@ -1,3 +1,0 @@
-{...}:{
-programs.lapce = {enable=true;};
-}
