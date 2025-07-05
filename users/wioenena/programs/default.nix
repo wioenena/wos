@@ -4,6 +4,7 @@
     ./hyprland
     ./waybar
     ./zed-editor
+    ./lapce
     ./kitty.nix
     ./git.nix
     ./brave.nix
