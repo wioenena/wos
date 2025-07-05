@@ -37,7 +37,6 @@
     wget
     curl
     xdg-user-dirs
-    kdePackages.kdeconnect-kde
 
     # Nix language server
     nixd
