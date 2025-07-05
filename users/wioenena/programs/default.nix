@@ -3,6 +3,7 @@
   imports = [
     ./hyprland
     ./waybar
+    ./zed-editor
     ./kitty.nix
     ./git.nix
     ./brave.nix
@@ -18,7 +19,6 @@
 
     # Editors
     lapce
-    zed-editor
 
     feh # Image viewer
     viu # Image viewer
@@ -38,6 +38,7 @@
     wget
     curl
     xdg-user-dirs
+    kdePackages.kdeconnect-kde
 
     # Nix language server
     nixd
