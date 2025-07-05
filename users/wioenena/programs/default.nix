@@ -7,6 +7,7 @@
     ./kitty.nix
     ./git.nix
     ./brave.nix
+    ./direnv.nix
     #    ./astal.nix
   ];
 
@@ -16,9 +17,6 @@
 
     # Terminals
     cool-retro-term # Fun terminal
-
-    # Editors
-    lapce
 
     feh # Image viewer
     viu # Image viewer
