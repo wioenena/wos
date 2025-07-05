@@ -62,6 +62,13 @@
           }
         ];
       };
+
+      templates = {
+        zig = {
+          path = ./flake-templates/zig;
+          description = "Flake for zig";
+        };
+      };
     }
     // flake-utils.lib.eachDefaultSystem (
       system:
