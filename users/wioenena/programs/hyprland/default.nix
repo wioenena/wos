@@ -22,6 +22,23 @@ in
       env = [
         "XCURSOR_SIZE,${cursorSize}"
         "HYPRCURSOR_SIZE,${cursorSize}"
+
+        # Toolkit Backend Variables
+        "GDK_BACKEND,wayland,x11,*"
+        "QT_QPA_PLATFORM,wayland"
+        "SDL_VIDEODRIVER,wayland"
+        "CLUTTER_BACKEND,wayland"
+
+        # XDG Specifications
+        "XDG_CURRENT_DESKTOP,Hyprland"
+        "XDG_SESSION_TYPE,wayland"
+        "XDG_SESSION_DESKTOP,Hyprland"
+
+        # Qt Variables
+        "QT_AUTO_SCREEN_SCALE_FACTOR,1"
+        "QT_QPA_PLATFORM,wayland;xcb"
+        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+        "QT_QPA_PLATFORMTHEME,qt5ct"
       ];
 
       exec-once = [

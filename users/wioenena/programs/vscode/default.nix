@@ -18,7 +18,6 @@
           cursorSmoothCaretAnimation = "on";
           minimap.autohide = true;
           wordWrap = "on";
-
         };
 
         workbench.activityBar.location = "top";
