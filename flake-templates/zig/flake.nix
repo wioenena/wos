@@ -19,7 +19,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in
       {
-        devShells.${system} = pkgs.mkShell {
+        devShells.${system}.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             zig
             zls
