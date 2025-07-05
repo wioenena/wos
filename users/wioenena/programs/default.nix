@@ -6,7 +6,7 @@
     ./kitty.nix
     ./git.nix
     ./brave.nix
-    ./astal.nix
+    #    ./astal.nix
   ];
 
   home.packages = with pkgs; [
@@ -33,6 +33,11 @@
     xdg-user-dirs
     file
     bat
+    jq
+    neofetch
+    wget
+    curl
+    xdg-user-dirs
 
     # Nix language server
     nixd
@@ -46,6 +51,5 @@
     noto-fonts
     noto-fonts-cjk-sans
     font-awesome
-
   ];
 }
