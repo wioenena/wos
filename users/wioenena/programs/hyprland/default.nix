@@ -2,6 +2,10 @@
 let
   cursorSize = "24";
   terminal = "kitty";
+  touchpad = {
+    device = "syna3602:00-093a:0255-touchpad";
+    enable = false;
+  };
 in
 {
   home.packages = with pkgs; [
@@ -143,6 +147,13 @@ in
           natural_scroll = false;
         };
       };
+
+      device = [
+        {
+          name = touchpad.device;
+          enabled = touchpad.enable;
+        }
+      ];
 
       gestures = {
         workspace_swipe = false;
