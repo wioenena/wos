@@ -52,5 +52,8 @@
     noto-fonts
     noto-fonts-cjk-sans
     font-awesome
+
+    # VPN
+    protonvpn-gui
   ];
 }

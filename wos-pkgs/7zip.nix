@@ -7,7 +7,11 @@ pkgs.stdenv.mkDerivation {
     sha256 = "sha256-FekUtUUvHaeHnG4Sho04n95REcr6uHs0hXouOhIBhAk=";
   };
 
-  nativeBuildInputs = [ pkgs.autoPatchelfHook pkgs.glibc pkgs.stdenv.cc.cc ];
+  nativeBuildInputs = [
+    pkgs.autoPatchelfHook
+    pkgs.glibc
+    pkgs.stdenv.cc.cc
+  ];
 
   buildPhase = ''
     ${pkgs.gnutar}/bin/tar -xvf $src

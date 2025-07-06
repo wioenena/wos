@@ -49,7 +49,12 @@
       nixosConfigurations.${wosCfg.host} = nixpkgs.lib.nixosSystem {
         system = localSystem;
         specialArgs = {
-          inherit inputs wosCfg wosPkgs pkgs-unstable;
+          inherit
+            inputs
+            wosCfg
+            wosPkgs
+            pkgs-unstable
+            ;
         };
 
         modules = [
@@ -60,7 +65,14 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${wosCfg.user.username} = ./users/${wosCfg.user.username}/home.nix;
-            home-manager.extraSpecialArgs = { inherit inputs wosCfg wosPkgs pkgs-unstable; };
+            home-manager.extraSpecialArgs = {
+              inherit
+                inputs
+                wosCfg
+                wosPkgs
+                pkgs-unstable
+                ;
+            };
           }
         ];
       };
