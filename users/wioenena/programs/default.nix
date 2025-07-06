@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ wosPkgs, pkgs, ... }:
 {
   imports = [
     ./hyprland
@@ -38,6 +38,7 @@
     curl
     xdg-user-dirs
     unzip
+    wosPkgs."7zip"
 
     # Nix language server
     nixd

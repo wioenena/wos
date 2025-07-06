@@ -1,4 +1,4 @@
 { pkgs }:
 {
-  "7zip" = import ./7zip { inherit pkgs; };
+  "7zip" = import ./7zip.nix { inherit pkgs; };
 }
