@@ -37,6 +37,7 @@
     wget
     curl
     xdg-user-dirs
+    unzip
 
     # Nix language server
     nixd

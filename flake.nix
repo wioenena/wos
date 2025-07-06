@@ -42,8 +42,10 @@
         lib = pkgs.lib;
         inherit pkgs;
       };
+      wosPkgs = import ./wos-pkgs { inherit pkgs; };
     in
     {
+      inherit wosPkgs;
       nixosConfigurations.${wosCfg.host} = nixpkgs.lib.nixosSystem {
         system = localSystem;
         specialArgs = {
