@@ -13,6 +13,9 @@
   ];
 
   home.packages = with pkgs; [
+    # Apps
+    discord
+
     # Sound
     pavucontrol
 

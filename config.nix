@@ -18,6 +18,7 @@
     builtins.elem (lib.getName pkg) [
       "spotify"
       "vscode"
+      "discord"
     ];
 
   boot = {

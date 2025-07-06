@@ -1,6 +1,6 @@
 { ... }:
 let
-  theme = "One Black";
+  theme = "Gruber Darker - Minimal";
   iconTheme = "Material Icon Theme";
 in
 {
