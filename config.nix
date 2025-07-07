@@ -19,6 +19,7 @@
       "spotify"
       "vscode"
       "discord"
+      "cloudflare-warp"
     ];
 
   boot = {

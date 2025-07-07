@@ -170,7 +170,7 @@ in
         "$mod , M, exit,"
         #        "$mod , E, exec, $fileManager"
         "$mod , V, togglefloating,"
-        #        "$mod , R, exec, $menu"
+        "$mod , R, exec, walker"
         "$mod , P, pseudo, # dwindle"
         # "$mod , J, togglesplit, # dwindle"
         "$mod , F, fullscreen"

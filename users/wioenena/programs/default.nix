@@ -22,8 +22,12 @@
     # Terminals
     cool-retro-term # Fun terminal
 
-    feh # Image viewer
-    viu # Image viewer
+    # Image viewer
+    feh
+    viu
+
+    # API Tools
+    postman
 
     # Notification
     libnotify
@@ -50,6 +54,7 @@
 
     # Wayland
     wl-clipboard
+    walker
 
     # Fonts
     noto-fonts
