@@ -15,6 +15,7 @@
   home.packages = with pkgs; [
     # Apps
     discord
+    obsidian
 
     # Sound
     pavucontrol

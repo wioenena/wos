@@ -21,6 +21,7 @@
       "discord"
       "cloudflare-warp"
       "postman"
+      "obsidian"
     ];
 
   boot = {

@@ -2,6 +2,7 @@
 let
   cursorSize = "24";
   terminal = "kitty";
+  monitor.scale = "1.25";
   touchpad = {
     device = "syna3602:00-093a:0255-touchpad";
     enable = false;
@@ -22,7 +23,7 @@ in
 
     settings = {
       "$mod" = "SUPER";
-      monitor = [ ",1920x1080,auto,1" ];
+      monitor = [ ",1920x1080,auto,${monitor.scale}" ];
       env = [
         "XCURSOR_SIZE,${cursorSize}"
         "HYPRCURSOR_SIZE,${cursorSize}"

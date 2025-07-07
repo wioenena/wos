@@ -53,11 +53,7 @@ in
     userSettings = {
       ui_font_size = 18;
       buffer_font_size = 16;
-      autosave = {
-        after_delay = {
-          milliseconds = 1000;
-        };
-      };
+      autosave = "on_focus_change";
       vim_mode = true;
       theme = {
         mode = "system";
@@ -77,7 +73,7 @@ in
         show_close_button = "always";
         show_diagnostics = "all";
       };
-      format_on_save = "on";
+      format_on_save = "language_server";
       file_finder = {
         modal_max_width = "xlarge";
       };
