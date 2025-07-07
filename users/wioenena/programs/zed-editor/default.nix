@@ -74,14 +74,6 @@ in
         show_diagnostics = "all";
       };
       format_on_save = "on";
-      inlay_hints = {
-        enabled = true;
-        show_background = true;
-        show_other_hints = true;
-        show_parameter_hints = true;
-        show_type_hints = true;
-        show_value_hints = true;
-      };
       file_finder = {
         modal_max_width = "xlarge";
       };

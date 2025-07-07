@@ -20,6 +20,7 @@
       "vscode"
       "discord"
       "cloudflare-warp"
+      "postman"
     ];
 
   boot = {
