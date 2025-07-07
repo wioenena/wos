@@ -2,6 +2,15 @@
 {
   programs.vscode = {
     enable = true;
+    package = (pkgs.vscode.override { }).overrideAttrs (oldAttrs: rec {
+      src = (
+        builtins.fetchTarball {
+          url = "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64";
+          sha256 = "sha256:1qpl0spiv98ra8dqa4chj0xs9ib2rsqccf4bgai84izda1nfvrxs";
+        }
+      );
+      version = "latest-release";
+    });
     mutableExtensionsDir = true;
 
     profiles.default = {

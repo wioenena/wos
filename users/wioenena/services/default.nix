@@ -1,4 +1,4 @@
 { ... }:
 {
-  imports = [ ./kdeconnect.nix ];
+  imports = [ ];
 }

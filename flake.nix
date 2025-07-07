@@ -14,15 +14,15 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
-    astal = {
-      url = "github:aylur/astal";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    ags = {
-      url = "github:aylur/ags";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.astal.follows = "astal";
-    };
+    #    astal = {
+    #      url = "github:aylur/astal";
+    #      inputs.nixpkgs.follows = "nixpkgs";
+    #    };
+    #    ags = {
+    #      url = "github:aylur/ags";
+    #      inputs.nixpkgs.follows = "nixpkgs";
+    #      inputs.astal.follows = "astal";
+    #    };
   };
 
   outputs =
@@ -45,7 +45,6 @@
       wosPkgs = import ./wos-pkgs { inherit pkgs; };
     in
     {
-      inherit wosPkgs;
       nixosConfigurations.${wosCfg.host} = nixpkgs.lib.nixosSystem {
         system = localSystem;
         specialArgs = {
