@@ -73,7 +73,7 @@ in
         show_close_button = "always";
         show_diagnostics = "all";
       };
-      format_on_save = "on";
+      format_on_save = "off";
       file_finder = {
         modal_max_width = "xlarge";
       };
