@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs-unstable, ... }:
 {
   imports = [
     ./editors.nix
@@ -6,5 +6,6 @@
     ./hyprland.nix
     ./homeManager.nix
     ./dconf.nix
+    ./nix-ld.nix
   ];
 }

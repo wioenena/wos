@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs-unstable, ... }:
 let
   theme = "Gruber Darker - Minimal";
   iconTheme = "Material Icon Theme";
@@ -6,6 +6,7 @@ in
 {
   programs.zed-editor = {
     enable = true;
+    package = pkgs-unstable.zed-editor;
     extensions = [
       # Themes
       "tokyo-night"
