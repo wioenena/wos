@@ -49,6 +49,10 @@ in
       "nim"
       "angular"
       "crystal"
+      "nix"
+
+      # Others
+      "git_firefly"
     ];
 
     userSettings = {

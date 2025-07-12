@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs-unstable, ... }:
 {
   programs.nix-ld = {
     enable = true;
