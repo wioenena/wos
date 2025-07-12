@@ -52,7 +52,7 @@ in
       "nix"
 
       # Others
-      "git_firefly"
+      "git-firefly"
     ];
 
     userSettings = {
