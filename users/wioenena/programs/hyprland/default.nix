@@ -5,7 +5,7 @@ let
   monitor.scale = "1";
   touchpad = {
     device = "syna3602:00-093a:0255-touchpad";
-    enable = false;
+    enable = true;
   };
 in
 {
