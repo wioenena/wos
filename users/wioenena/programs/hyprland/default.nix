@@ -2,7 +2,7 @@
 let
   cursorSize = "24";
   terminal = "kitty";
-  monitor.scale = "1";
+  monitor.scale = "1.25";
   touchpad = {
     device = "syna3602:00-093a:0255-touchpad";
     enable = false;
