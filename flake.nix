@@ -81,6 +81,11 @@
           path = ./flake-templates/zig;
           description = "Flake for zig";
         };
+
+        go = {
+          path = ./flake-templates/go;
+          description = "Flake for go";
+        };
       };
     }
     // flake-utils.lib.eachDefaultSystem (
