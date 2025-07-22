@@ -1,6 +1,6 @@
 { pkgs-unstable, ... }:
 let
-  theme = "Gruber Darker - Minimal";
+  theme = "One Black";
   iconTheme = "Material Icon Theme";
 in
 {
