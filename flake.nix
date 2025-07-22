@@ -86,6 +86,11 @@
           path = ./flake-templates/go;
           description = "Flake for go";
         };
+
+        go = {
+          path = ./flake-templates/go;
+          description = "Flake for nodejs";
+        };
       };
     }
     // flake-utils.lib.eachDefaultSystem (
