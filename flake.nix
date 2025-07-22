@@ -87,8 +87,8 @@
           description = "Flake for go";
         };
 
-        go = {
-          path = ./flake-templates/go;
+        node = {
+          path = ./flake-templates/node;
           description = "Flake for nodejs";
         };
       };
