@@ -23,6 +23,11 @@
     networkmanager = {
       enable = true;
       dns = "systemd-resolved";
+      settings = {
+        connectivity = {
+          uri = "https://nmcheck.gnome.org/";
+        };
+      };
     };
     useDHCP = false;
     dhcpcd.enable = false;
