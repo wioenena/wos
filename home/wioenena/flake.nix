@@ -32,18 +32,15 @@
 
       pkgs = import nixpkgs {
         inherit system;
-        overlays = [overlays];
+        overlays = [ overlay ];
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
       pkgs-unstable = import nixpkgs-unstable {
         inherit system;
-        overlays = [overlay];
+        overlays = [ overlay ];
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
-
-      custom-pkgs = import ../custom-pkgs { inherit pkgs; };
-
     in
     {
       homeConfigurations."wioenena" = home-manager.lib.homeManagerConfiguration {
@@ -52,7 +49,7 @@
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [ ./home.nix ];
-        extraSpecialArgs = { inherit inputs pkgs-unstable custom-pkgs; };
+        extraSpecialArgs = { inherit inputs pkgs-unstable cfg; };
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix

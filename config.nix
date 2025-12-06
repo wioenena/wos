@@ -3,7 +3,7 @@
     username = "wioenena";
     isNormalUser = true;
     initialPassword = "nixos";
-    extraGroups = ["wheel"];
+    extraGroups = [ "wheel" ];
     description = "Barış Köprülü";
     createHome = true;
   };
@@ -11,6 +11,6 @@
   git = {
     enable = true;
     user.name = "wioenena";
-    user.email = "wioenena@gmail.com"
+    user.email = "wioenena@gmail.com";
   };
 }
