@@ -9,5 +9,7 @@
     initialPassword = "nixos";
     extraGroups = [ "wheel" ];
     shell = pkgs.fish;
+    description = "Barış Köprülü";
+    createHome = true;
   };
 }

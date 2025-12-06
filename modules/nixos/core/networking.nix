@@ -1,17 +1,19 @@
 { inputs, ... }:
+let
+  nameservers = ["1.1.1.1" "1.0.0.1" "8.8.8.8" "8.8.4.4"];
+in
 {
+  # IPv6
+  networking.enableIPv6 = false;
+  boot.kernelParams = ["ipv6.disable=1"];
+
   networking = {
+    inherit nameservers;
+
     hostName = "nixos";
     hosts = {
       "127.0.0.1" = [ "localhost" ];
     };
-
-    enableIPv6 = false;
-
-    nameservers = [
-      "1.1.1.1"
-      "1.0.0.1"
-    ];
 
     firewall = {
       enable = true;
@@ -22,25 +24,23 @@
 
     networkmanager = {
       enable = true;
-      dns = "systemd-resolved";
+      dns = "none";
       settings = {
         connectivity = {
           uri = "https://nmcheck.gnome.org/";
         };
       };
     };
+
     useDHCP = false;
     dhcpcd.enable = false;
   };
 
   services.resolved = {
     enable = true;
-    dnssec = "allow-downgrade";
-    fallbackDns = [
-      "1.1.1.1"
-      "1.0.0.1"
-    ];
+    dnssec = "true";
     dnsovertls = "true";
+    fallbackDns = nameservers;
   };
 
   users.users.wioenena.extraGroups = [ "networkmanager" ];
