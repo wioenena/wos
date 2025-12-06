@@ -1,9 +1,10 @@
-{ pkgs, cfg, ... }:
-with cfg.git; {
+{ pkgs, ... }:
+{
   programs.git = {
-    inherit enable;
+    enable = true;
     settings = {
-      inherit user;
+      user.name = "wioenena";
+      user.email = "wioenena";
     };
   };
 }

@@ -27,8 +27,7 @@
       system = "x86_64-linux";
       allowedUnfreePkgNames = builtins.fromJSON (builtins.readFile ../../../allowed-unfree-pkgs.json);
       allowUnfreePredicate = pkg: allowedUnfreePkgNames;
-      overlay = import ../../../overlay;
-      cfg = import ../../../config.nix;
+      overlay = import ../../overlay;
 
       pkgs = import nixpkgs {
         inherit system;
@@ -49,7 +48,7 @@
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [ ./home.nix ];
-        extraSpecialArgs = { inherit inputs pkgs-unstable cfg; };
+        extraSpecialArgs = { inherit inputs pkgs-unstable; };
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix

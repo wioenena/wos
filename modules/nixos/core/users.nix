@@ -1,19 +1,14 @@
 {
-  inputs,
-  cfg,
   pkgs,
   ...
 }:
-with cfg.user;
 {
-  users.users.${username} = {
-    inherit
-      isNormalUser
-      initialPassword
-      extraGroups
-      description
-      createHome
-      ;
+  users.users.wioenena = {
+    isNormalUser = true;
+    initialPassword = "nixos";
+    extraGroups = [ "wheel" ];
+    description = "Barış Köprülü";
+    createHome = true;
     shell = pkgs.fish;
   };
 }
