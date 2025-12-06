@@ -1,11 +1,10 @@
 {
   inputs,
-  username,
   pkgs,
   ...
 }:
 {
-  users.users.${username} = {
+  users.users.wioenena = {
     isNormalUser = true;
     initialPassword = "nixos";
     extraGroups = [ "wheel" ];

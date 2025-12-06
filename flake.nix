@@ -47,7 +47,8 @@
         };
 
         modules = [
-          ./hosts/desktop/default.nix
+          ./hosts/desktop
+          ./modules/nixos
         ];
       };
     };

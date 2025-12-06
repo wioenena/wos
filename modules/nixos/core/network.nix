@@ -1,4 +1,4 @@
-{ inputs, username, ... }:
+{ inputs, ... }:
 {
   networking = {
     hostName = "nixos";
@@ -43,5 +43,5 @@
     dnsovertls = "true";
   };
 
-  users.users.${username}.extraGroups = [ "networkmanager" ];
+  users.users.wioenena.extraGroups = [ "networkmanager" ];
 }

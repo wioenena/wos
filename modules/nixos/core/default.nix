@@ -12,5 +12,6 @@
     ./network.nix
     ./nix.nix
     ./users.nix
+    ./time.nix
   ];
 }
