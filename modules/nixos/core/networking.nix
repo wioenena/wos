@@ -6,6 +6,7 @@ let
     "8.8.8.8"
     "8.8.4.4"
   ];
+  kdeConnectPortRanges = [{from = 1714; to = 1764;}];
 in
 {
   # IPv6
@@ -23,8 +24,8 @@ in
     firewall = {
       enable = true;
       allowedTCPPorts = [ ];
-      allowedTCPPortRanges = [ ];
-      allowedUDPPortRanges = [ ];
+      allowedTCPPortRanges = [ ] ++ kdeConnectPortRanges;
+      allowedUDPPortRanges = [ ] ++ kdeConnectPortRanges;
     };
 
     networkmanager = {
