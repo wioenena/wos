@@ -24,7 +24,7 @@ in
 
     networkmanager = {
       enable = true;
-      dns = "none";
+      dns = "systemd-resolved";
       settings = {
         connectivity = {
           uri = "https://nmcheck.gnome.org/";

@@ -22,6 +22,7 @@
       allowedUnfreePkgs = builtins.fromJSON (builtins.readFile ./allowed-unfree-pkgs.json);
       allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgs;
       overlays = import ./overlays;
+      cfg = import ./config.nix;
 
       pkgs = import nixpkgs {
         inherit system;

@@ -1,10 +1,11 @@
 {
   inputs,
+  cfg,
   pkgs,
   ...
 }:
 {
-  users.users.wioenena = {
+  users.users.${cfg.user.username} = {
     isNormalUser = true;
     initialPassword = "nixos";
     extraGroups = [ "wheel" ];
