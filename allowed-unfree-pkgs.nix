@@ -1,1 +1,4 @@
-["vscode" "jetbrains-toolbox"]
+[
+  "vscode"
+  "jetbrains-toolbox"
+]
