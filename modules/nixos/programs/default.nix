@@ -8,5 +8,6 @@
     ./home-manager.nix
     ./nix-ld.nix
     ./tools.nix
+    ./git.nix
   ];
 }
