@@ -16,5 +16,6 @@
     places-status-indicator
     just-perfection
     desktop-icons-ng-ding
+    lock-keys-vaina
   ];
 }
