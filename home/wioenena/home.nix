@@ -6,8 +6,7 @@
 
 {
   imports = [
-    ./programs
-    ./gtk.nix
+    ../../modules/home-manager
     inputs.zen-browser.homeModules.default
   ];
 
