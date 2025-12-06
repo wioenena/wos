@@ -9,7 +9,7 @@
     ./firmware.nix
     ./hardware.nix
     ./locale.nix
-    ./network.nix
+    ./networking.nix
     ./nix.nix
     ./users.nix
     ./time.nix
