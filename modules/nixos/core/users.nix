@@ -4,9 +4,16 @@
   pkgs,
   ...
 }:
-with cfg.user; {
+with cfg.user;
+{
   users.users.${username} = {
-    inherit isNormalUser initialPassword extraGroups description createHome;
+    inherit
+      isNormalUser
+      initialPassword
+      extraGroups
+      description
+      createHome
+      ;
     shell = pkgs.fish;
   };
 }

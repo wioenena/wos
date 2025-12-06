@@ -19,14 +19,14 @@
     }:
     let
       system = "x86_64-linux";
-      allowedUnfreePkgs = builtins.fromJSON (builtins.readFile ./allowed-unfree-pkgs.json);
-      allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgs;
-      overlays = import ./overlays;
+      allowedUnfreePkgNames = builtins.fromJSON (builtins.readFile ./allowed-unfree-pkgs.json);
+      allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgNames;
+      overlay = import ./overlay;
       cfg = import ./config.nix;
 
       pkgs = import nixpkgs {
         inherit system;
-        overlays = [ overlays ];
+        overlays = [ overlay ];
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 

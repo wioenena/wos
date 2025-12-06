@@ -25,20 +25,20 @@
     }:
     let
       system = "x86_64-linux";
-      allowUnfreePredicate =
-        pkg:
-        builtins.elem (builtins.getAttr "pname" pkg) [
-          "vscode"
-          "jetbrains-toolbox"
-        ];
+      allowedUnfreePkgNames = builtins.fromJSON (builtins.readFile ../../../allowed-unfree-pkgs.json);
+      allowUnfreePredicate = pkg: allowedUnfreePkgNames;
+      overlay = import ../../../overlay;
+      cfg = import ../../../config.nix;
 
       pkgs = import nixpkgs {
         inherit system;
+        overlays = [overlays];
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
       pkgs-unstable = import nixpkgs-unstable {
         inherit system;
+        overlays = [overlay];
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 

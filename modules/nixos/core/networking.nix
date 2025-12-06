@@ -1,11 +1,16 @@
-{ inputs,cfg, ... }:
+{ inputs, cfg, ... }:
 let
-  nameservers = ["1.1.1.1" "1.0.0.1" "8.8.8.8" "8.8.4.4"];
+  nameservers = [
+    "1.1.1.1"
+    "1.0.0.1"
+    "8.8.8.8"
+    "8.8.4.4"
+  ];
 in
 {
   # IPv6
   networking.enableIPv6 = false;
-  boot.kernelParams = ["ipv6.disable=1"];
+  boot.kernelParams = [ "ipv6.disable=1" ];
 
   networking = {
     inherit nameservers;
