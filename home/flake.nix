@@ -17,7 +17,12 @@
   };
 
   outputs =
-    inputs@ { nixpkgs, nixpkgs-unstable, home-manager, ... }:
+    inputs@{
+      nixpkgs,
+      nixpkgs-unstable,
+      home-manager,
+      ...
+    }:
     let
       system = "x86_64-linux";
       allowUnfreePredicate =
@@ -28,12 +33,12 @@
         ];
 
       pkgs = import nixpkgs {
-      inherit system;
+        inherit system;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
       pkgs-unstable = import nixpkgs-unstable {
-      inherit system;
+        inherit system;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
@@ -47,7 +52,7 @@
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [ ./home.nix ];
-	extraSpecialArgs = {inherit inputs pkgs-unstable custom-pkgs;};
+        extraSpecialArgs = { inherit inputs pkgs-unstable custom-pkgs; };
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
