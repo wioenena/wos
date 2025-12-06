@@ -25,12 +25,7 @@
       username = "wioenena";
       system = "x86_64-linux";
       allowedUnfreePkgs = builtins.fromJSON (builtins.readFile ./allowed-unfree-pkgs.json);
-      allowUnfreePredicate =
-        pkg:
-        builtins.elem (builtins.getAttr "pname" pkg) [
-          "vscode"
-          "jetbrains-toolbox"
-        ];
+      allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgs;
 
       pkgs = import nixpkgs {
         inherit system;
@@ -42,11 +37,12 @@
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
-      custom-pkgs = import ./custom-pkgs { inherit pkgs; };
+      overlays = import ./overlays {};
+      custom-pkgs = import ./pkgs { inherit pkgs; };
 
     in
     {
-      inherit allowedUnfreePkgs;
+      inherit overlays;
       nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
         inherit pkgs system;
         specialArgs = {
@@ -59,8 +55,7 @@
         };
 
         modules = [
-          ./configuration.nix
-          ./common
+          ./hosts/desktop/default.nix
         ];
       };
     }
