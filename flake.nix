@@ -4,10 +4,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=25.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    systems.url = "github:nix-systems/x86_64-linux";
     flake-utils = {
       url = "github:numtide/flake-utils";
-      inputs.systems.follows = "systems";
     };
 
     home-manager = {
@@ -25,7 +23,8 @@
     }:
     let
       username = "wioenena";
-      localSystem = builtins.elemAt (import inputs.systems) 0;
+      system = "x86_64-linux";
+      allowedUnfreePkgs = builtins.fromJSON (builtins.readFile ./allowed-unfree-pkgs.json);
       allowUnfreePredicate =
         pkg:
         builtins.elem (builtins.getAttr "pname" pkg) [
@@ -34,12 +33,12 @@
         ];
 
       pkgs = import nixpkgs {
-        system = localSystem;
+        inherit system;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
       pkgs-unstable = import nixpkgs-unstable {
-        system = localSystem;
+        inherit system;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
@@ -47,10 +46,9 @@
 
     in
     {
+      inherit allowedUnfreePkgs;
       nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
-        inherit pkgs;
-
-        system = localSystem;
+        inherit pkgs system;
         specialArgs = {
           inherit
             inputs
