@@ -6,7 +6,12 @@ let
     "8.8.8.8"
     "8.8.4.4"
   ];
-  kdeConnectPortRanges = [{from = 1714; to = 1764;}];
+  kdeConnectPortRanges = [
+    {
+      from = 1714;
+      to = 1764;
+    }
+  ];
 in
 {
   # IPv6
