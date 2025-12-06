@@ -44,6 +44,7 @@
           inherit
             inputs
             pkgs-unstable
+            cfg
             ;
         };
 

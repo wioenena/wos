@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs,cfg, ... }:
 let
   nameservers = ["1.1.1.1" "1.0.0.1" "8.8.8.8" "8.8.4.4"];
 in
@@ -43,5 +43,5 @@ in
     fallbackDns = nameservers;
   };
 
-  users.users.wioenena.extraGroups = [ "networkmanager" ];
+  users.users.${cfg.user.username}.extraGroups = [ "networkmanager" ];
 }

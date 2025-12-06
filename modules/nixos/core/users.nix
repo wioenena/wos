@@ -4,13 +4,9 @@
   pkgs,
   ...
 }:
-{
-  users.users.${cfg.user.username} = {
-    isNormalUser = true;
-    initialPassword = "nixos";
-    extraGroups = [ "wheel" ];
+with cfg.user; {
+  users.users.${username} = {
+    inherit isNormalUser initialPassword extraGroups description createHome;
     shell = pkgs.fish;
-    description = "Barış Köprülü";
-    createHome = true;
   };
 }
