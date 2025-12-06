@@ -1,3 +1,3 @@
 final: prev: {
-  latest-vscode = prev.callPackage ./vscode.nix { };
+  hello-script = prev.writeShellScriptBin "hello" "echo Hello World!";
 }

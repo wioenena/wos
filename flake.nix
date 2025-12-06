@@ -26,20 +26,19 @@
       system = "x86_64-linux";
       allowedUnfreePkgs = builtins.fromJSON (builtins.readFile ./allowed-unfree-pkgs.json);
       allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgs;
+      overlays = import ./overlays {};
 
       pkgs = import nixpkgs {
         inherit system;
+        overlays = [overlays];
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
       pkgs-unstable = import nixpkgs-unstable {
         inherit system;
+        overlays = [overlays];
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
-
-      overlays = import ./overlays {};
-      custom-pkgs = import ./pkgs { inherit pkgs; };
-
     in
     {
       inherit overlays;
@@ -50,7 +49,6 @@
             inputs
             username
             pkgs-unstable
-            custom-pkgs
             ;
         };
 
