@@ -25,7 +25,7 @@
     }:
     let
       system = "x86_64-linux";
-      allowedUnfreePkgNames = import ../../../allowed-unfree-pkgs.nix;
+      allowedUnfreePkgNames = import ../../allowed-unfree-pkgs.nix;
       allowUnfreePredicate = pkg: allowedUnfreePkgNames;
       overlay = import ../../overlay;
 
