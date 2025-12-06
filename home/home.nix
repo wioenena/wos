@@ -1,6 +1,5 @@
 {
-  inputs,
-  username,
+inputs,
   pkgs,
   ...
 }:
@@ -12,8 +11,8 @@
     inputs.zen-browser.homeModules.default
   ];
 
-  home.username = username;
-  home.homeDirectory = "/home/${username}";
+  home.username = "wioenena";
+  home.homeDirectory = "/home/wioenena";
 
   home.stateVersion = "25.11";
 
