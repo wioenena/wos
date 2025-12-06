@@ -1,6 +1,4 @@
-{
-
-}:
+{ pkgs, ... }:
 {
   dconf = {
     enable = true;

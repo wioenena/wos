@@ -1,0 +1,1 @@
+/home/wioenena/Documents/wos/allowed-unfree-pkgs.nix
