@@ -26,7 +26,7 @@
     let
       system = "x86_64-linux";
       allowedUnfreePkgNames = import ../../allowed-unfree-pkgs.nix;
-      allowUnfreePredicate = pkg: allowedUnfreePkgNames;
+      allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgNames;
       overlay = import ../../overlay;
 
       pkgs = import nixpkgs {

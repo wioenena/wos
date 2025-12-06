@@ -5,7 +5,7 @@
   glib,
   gnome-shell,
 }:
-stdenv.mkDerivation {
+stdenv.mkDerivation rec {
   pname = "gnome-shell-extension-lock-keys-vaina";
   version = "67";
 
@@ -13,6 +13,11 @@ stdenv.mkDerivation {
     url = "https://extensions.gnome.org/extension-data/lockkeysvaina.lt.v67.shell-extension.zip";
     sha256 = "sha256-4MIlZmaMnBoQ7GPtDa7NCjFRO1PSkKLBZL1hDMbCq/Q=";
     stripRoot = false;
+  };
+
+  passthru = {
+    extensionPortalSlug = pname;
+    extensionUuid = "lockkeys@vaina.lt";
   };
 
   nativeBuildInputs = [ glib ];
@@ -26,7 +31,7 @@ stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
     mkdir -p "$out/share/gnome-shell/extensions/lockkeys@vaina.lt"
-    cp -r {extension.js,prefs.js,stylesheet.css,schemas,locale,icons} "$out/share/gnome-shell/extensions/lockkeys@vaina.lt"
+    cp -r {extension.js,prefs.js,stylesheet.css,metadata.json,schemas,locale,icons} "$out/share/gnome-shell/extensions/lockkeys@vaina.lt"
     runHook postInstall
   '';
 
