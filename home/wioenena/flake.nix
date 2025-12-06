@@ -25,7 +25,7 @@
     }:
     let
       system = "x86_64-linux";
-      allowedUnfreePkgNames = builtins.fromJSON (builtins.readFile ../../../allowed-unfree-pkgs.json);
+      allowedUnfreePkgNames = import ../../../allowed-unfree-pkgs.nix;
       allowUnfreePredicate = pkg: allowedUnfreePkgNames;
       overlay = import ../../overlay;
 

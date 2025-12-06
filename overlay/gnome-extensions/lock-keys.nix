@@ -1,17 +1,32 @@
-{ lib, stdenv, fetchzip, gnome-shell }:
+{
+  lib,
+  stdenv,
+  fetchzip,
+  glib,
+  gnome-shell,
+}:
 stdenv.mkDerivation {
   pname = "gnome-shell-extension-lock-keys-vaina";
   version = "67";
 
   src = fetchzip {
     url = "https://extensions.gnome.org/extension-data/lockkeysvaina.lt.v67.shell-extension.zip";
-    sha256 = "1wcw730c683qd3c74gdsqcp2sa20qic8v9cvc4lvgqjqf3k94w51";
+    sha256 = "sha256-4MIlZmaMnBoQ7GPtDa7NCjFRO1PSkKLBZL1hDMbCq/Q=";
+    stripRoot = false;
   };
+
+  nativeBuildInputs = [ glib ];
+
+  buildPhase = ''
+    runHook preBuild
+    glib-compile-schemas --strict --targetdir=schemas schemas
+    runHook postBuild
+  '';
 
   installPhase = ''
     runHook preInstall
     mkdir -p "$out/share/gnome-shell/extensions/lockkeys@vaina.lt"
-    cp -r {extension.js,pref.js,stylesheet.css,schemas,locale,icons} "$out/share/gnome-shell/extensions/lockkeys@vaina.lt"
+    cp -r {extension.js,prefs.js,stylesheet.css,schemas,locale,icons} "$out/share/gnome-shell/extensions/lockkeys@vaina.lt"
     runHook postInstall
   '';
 

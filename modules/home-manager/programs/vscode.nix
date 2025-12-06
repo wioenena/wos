@@ -1,8 +1,7 @@
-{ pkgs, custom-pkgs, ... }:
+{ pkgs, ... }:
 {
   programs.vscode = {
     enable = true;
-    package = custom-pkgs.vscode;
     mutableExtensionsDir = true;
   };
 }
