@@ -13,5 +13,6 @@
     ./nix.nix
     ./users.nix
     ./time.nix
+    ./virtualisation.nix
   ];
 }
