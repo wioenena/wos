@@ -5,5 +5,6 @@
     ./desktop-manager.nix
     ./gnome.nix
     ./openssh.nix
+    ./sysprof.nix
   ];
 }
