@@ -5,7 +5,7 @@
       systemd.enable = true;
     };
 
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_zen;
 
     loader = {
       grub = {
