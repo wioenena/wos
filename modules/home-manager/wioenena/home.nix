@@ -6,7 +6,7 @@
 
 {
   imports = [
-    ../../modules/home-manager
+  	./default.nix
     inputs.zen-browser.homeModules.default
   ];
 
