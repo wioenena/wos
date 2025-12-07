@@ -1,4 +1,5 @@
 [
   "vscode"
   "jetbrains-toolbox"
+  "steam
 ]
