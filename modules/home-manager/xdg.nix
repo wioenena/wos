@@ -1,9 +1,16 @@
-{...}: {
-    xdg = {
-        portal.enable = true;
-        userDirs = {
-            enable = true;
-            createDirectories = true;
-        };
+{ pkgs, ... }:
+{
+  xdg = {
+    portal.enable = true;
+    portal.config = {
+      common = {
+        default = [ "gtk" ];
+      };
     };
+    portal.extraPortals = with pkgs; [ xdg-desktop-portal-gtk ];
+    userDirs = {
+      enable = true;
+      createDirectories = true;
+    };
+  };
 }
