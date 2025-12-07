@@ -9,5 +9,6 @@
     ./nix-ld.nix
     ./tools.nix
     ./git.nix
+    ./virt-manager.nix
   ];
 }
