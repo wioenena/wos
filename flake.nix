@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=25.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-   home-manager = {
+    home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -58,10 +58,10 @@
       };
 
       homeConfigurations.wioenena = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
+        inherit pkgs;
 
-      modules = [./modules/home-manager/wioenena/home.nix];
-      extraSpecialArgs = {inherit inputs pkgs-unstable;};
+        modules = [ ./modules/home-manager/wioenena/home.nix ];
+        extraSpecialArgs = { inherit inputs pkgs-unstable; };
       };
     };
 }

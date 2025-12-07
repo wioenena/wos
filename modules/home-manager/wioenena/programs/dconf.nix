@@ -13,6 +13,7 @@
     places-status-indicator
     just-perfection
     lock-keys-vaina
+    mpris-label
   ];
 
   dconf = {
@@ -34,6 +35,7 @@
           places-status-indicator.extensionUuid
           just-perfection.extensionUuid
           lock-keys-vaina.extensionUuid
+          mpris-label.extensionUuid
         ];
       };
     };

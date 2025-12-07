@@ -8,5 +8,6 @@
     ./nix-ld.nix
     ./tools.nix
     ./git.nix
+    ./steam.nix
   ];
 }
