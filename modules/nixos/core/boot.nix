@@ -8,13 +8,10 @@
     kernelPackages = pkgs.linuxPackages_zen;
 
     loader = {
-      grub = {
+      limine = {
         enable = true;
         efiSupport = true;
-        device = "nodev";
-        extraGrubInstallArgs = [ "bootloader-id=NixOS" ];
       };
-
       efi = {
         canTouchEfiVariables = true;
         efiSysMountPoint = "/boot";

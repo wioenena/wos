@@ -7,5 +7,5 @@
     autoPrune.enable = true;
     autoPrune.dates = "weekly";
   };
-  users.users.wioenena.extraGroups = ["docker"];
+  users.users.wioenena.extraGroups = [ "docker" ];
 }
