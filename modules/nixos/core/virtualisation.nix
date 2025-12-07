@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   virtualisation.libvirtd.enable = true;
   virtualisation.docker = {
     enable = true;
@@ -6,4 +7,5 @@
     autoPrune.enable = true;
     autoPrune.dates = "weekly";
   };
+  users.users.wioenena.extraGroups = ["docker"];
 }
