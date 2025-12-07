@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+
   home.packages = with pkgs.gnomeExtensions; [
     applications-menu
     dash-to-dock
@@ -11,7 +12,6 @@
     vitals
     places-status-indicator
     just-perfection
-    gtk4-desktop-icons-ng-ding
     lock-keys-vaina
   ];
 
@@ -31,7 +31,6 @@
           vitals.extensionUuid
           places-status-indicator.extensionUuid
           just-perfection.extensionUuid
-          gtk4-desktop-icons-ng-ding.extensionUuid
           lock-keys-vaina.extensionUuid
         ];
       };
