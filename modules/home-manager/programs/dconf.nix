@@ -11,9 +11,10 @@
     vitals
     places-status-indicator
     just-perfection
-    desktop-icons-ng-ding
+    gtk4-desktop-icons-ng-ding
     lock-keys-vaina
   ];
+
   dconf = {
     enable = true;
     settings = {
@@ -30,7 +31,7 @@
           vitals.extensionUuid
           places-status-indicator.extensionUuid
           just-perfection.extensionUuid
-          desktop-icons-ng-ding.extensionUuid
+          gtk4-desktop-icons-ng-ding.extensionUuid
           lock-keys-vaina.extensionUuid
         ];
       };
