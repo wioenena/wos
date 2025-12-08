@@ -4,8 +4,9 @@
     defaultEditor = true;
     enable = true;
     package = pkgs.neovim-unwrapped;
-    plugins = with pkgs; [
-      vimPlugins.lazy-nvim
+    plugins = with pkgs.vimPlugins; [
+      lazy-nvim
+      transparent-nvim
     ];
   };
 

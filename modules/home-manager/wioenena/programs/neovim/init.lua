@@ -17,9 +17,6 @@ vim.o.background = "dark"
 vim.wo.relativenumber = true
 
 require("lazy").setup({
-    spec = {
-        { import = "plugins" },
-    },
     checker = { enabled = true },
 })
 
