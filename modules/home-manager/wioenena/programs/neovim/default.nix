@@ -7,36 +7,9 @@
     plugins = with pkgs; [
       vimPlugins.lazy-nvim
     ];
-    extraLuaConfig = ''
-      vim.o.backup = false
-      vim.o.writebackup = false
-      vim.o.swapfile = false
-      vim.o.ignorecase = true
-      vim.o.smartcase = true
-      vim.o.wrap = true
-      vim.o.numberwidth = 2
-      vim.o.tabstop = 2
-      vim.o.shiftwidth = 2
-      vim.o.smarttab = true
-      vim.o.autoindent = true
-      vim.o.smartindent = true
-      vim.o.foldenable = false
-      vim.o.encoding = "utf-8"
-      vim.o.fileencoding = "utf-8"
-      vim.o.background = "dark"
-      vim.wo.relativenumber = true
-
-      require("lazy").setup({
-        spec = {
-          { import = "plugins" },
-        },
-        checker = { enabled = true },
-      })
-
-      require("config.lsp")
-    '';
   };
 
+  xdg.configFile."nvim/init.lua".source = ./init.lua;
   xdg.configFile."nvim/lua/config".source = ./config;
   xdg.configFile."nvim/lua/plugins".source = ./plugins;
 
