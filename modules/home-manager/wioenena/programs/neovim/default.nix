@@ -7,8 +7,7 @@
     plugins = with pkgs; [
       vimPlugins.lazy-nvim
     ];
-    generatedConfigs = {
-    lua = ''
+    extraLuaConfig = ''
       vim.o.backup = false
       vim.o.writebackup = false
       vim.o.swapfile = false
@@ -36,9 +35,9 @@
 
       require("config.lsp")
     '';
-    };
   };
 
-  xdg.configFile."nvim/lua/config/lsp.lua".target = "./config/lsp.lua";
+  xdg.configFile."nvim/lua/config".source = ./config;
+  xdg.configFile."nvim/lua/plugins".source = ./plugins;
 
-  }
+}
