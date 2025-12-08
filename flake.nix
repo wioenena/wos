@@ -12,6 +12,9 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    flake-utils = {
+      url = "github:numtide/flake-utils";
+    };
   };
 
   outputs =
@@ -63,5 +66,16 @@
         modules = [ ./modules/home-manager/wioenena/home.nix ];
         extraSpecialArgs = { inherit inputs pkgs-unstable; };
       };
-    };
+    }
+    // inputs.flake-utils.lib.eachSystem [ "x86_64-linux" ] (
+      system:
+      let
+        pkgs = import nixpkgs {
+          inherit system;
+        };
+      in
+      {
+        formatter = pkgs.nixfmt-rfc-style;
+      }
+    );
 }

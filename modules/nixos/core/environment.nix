@@ -13,4 +13,8 @@
     btrfs-progs
     ntfs3g
   ];
+
+  environment.variables = {
+    vblank_mode = 0; # Disable V-Sync in system
+  };
 }
