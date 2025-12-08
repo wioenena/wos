@@ -9,6 +9,5 @@
     ./git.nix
     ./steam.nix
     ./nano.nix
-    ./vim.nix
   ];
 }
