@@ -15,5 +15,6 @@
     ./time.nix
     ./virtualisation.nix
     ./xdg.nix
+    ./packages.nix
   ];
 }
