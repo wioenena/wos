@@ -8,6 +8,6 @@
     ./zen-browser.nix
     ./vscode.nix
     ./zed-editor.nix
-    ./neovim.nix
+    ./neovim
   ];
 }

@@ -4,7 +4,11 @@
     defaultEditor = true;
     enable = true;
     package = pkgs.neovim-unwrapped;
-    extraLuaConfig = ''
+    plugins = with pkgs; [
+      vimPlugins.lazy-nvim
+    ];
+    generatedConfigs = {
+    lua = ''
       vim.o.backup = false
       vim.o.writebackup = false
       vim.o.swapfile = false
@@ -21,12 +25,20 @@
       vim.o.encoding = "utf-8"
       vim.o.fileencoding = "utf-8"
       vim.o.background = "dark"
-
       vim.wo.relativenumber = true
 
+      require("lazy").setup({
+        spec = {
+          { import = "plugins" },
+        },
+        checker = { enabled = true },
+      })
 
-      require("config.lazy")
       require("config.lsp")
     '';
+    };
   };
-}
+
+  xdg.configFile."nvim/lua/config/lsp.lua".target = "./config/lsp.lua";
+
+  }
