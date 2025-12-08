@@ -10,6 +10,7 @@
     dosfstools
     exfatprogs
     e2fsprogs
+    btrfs-progs
     ntfs3g
   ];
 }
