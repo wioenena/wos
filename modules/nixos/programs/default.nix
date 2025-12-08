@@ -10,6 +10,5 @@
     ./steam.nix
     ./nano.nix
     ./vim.nix
-    ./neovim.nix
   ];
 }

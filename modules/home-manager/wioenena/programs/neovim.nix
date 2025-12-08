@@ -1,8 +1,9 @@
-{ ... }:
+{pkgs, ... }:
 {
   programs.neovim = {
     defaultEditor = true;
     enable = true;
+    package = pkgs.neovim-unwrapped;
     extraLuaConfig = ''
       vim.o.backup = false
       vim.o.writebackup = false
