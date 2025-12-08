@@ -20,8 +20,6 @@
     enable = true;
     settings = {
       "org/gnome/desktop/interface".color-scheme = "prefer-dark";
-      "org/gnome/desktop/wm/keybindings".switch-applications = [ ];
-      "org/gnome/desktop/wm/keybindings".switch-windows = [ "<Alt>Tab" ];
       "org/gnome/shell" = {
         enabled-extensions = with pkgs.gnomeExtensions; [
           applications-menu.extensionUuid
