@@ -4,8 +4,10 @@
     kitty
     jetbrains-toolbox
     swaynotificationcenter
+    fzf
 
     # Fonts
     nerd-fonts.jetbrains-mono
+    jetbrains-mono
   ];
 }
