@@ -29,4 +29,5 @@
     seahorse
     epiphany
   ];
+  xdg.portal.extraPortals = with pkgs; [ xdg-desktop-portal-gnome ];
 }
