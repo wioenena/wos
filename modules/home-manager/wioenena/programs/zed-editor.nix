@@ -19,7 +19,7 @@
     ];
     extraPackages = with pkgs; [ nixd ];
     userSettings = {
-      autosave.after_delay.milliseconds = 500;
+      autosave.after_delay.milliseconds = 5000;
       tab_bar.show_nav_history_buttons = false;
       tabs = {
         show_diagnostics = "all";
