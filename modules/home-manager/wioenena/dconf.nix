@@ -1,5 +1,6 @@
-{...}:{
-	 dconf = {
+{ ... }:
+{
+  dconf = {
     enable = true;
     settings = {
       "org/gnome/desktop/interface" = {

@@ -7,5 +7,6 @@
     ./vscode.nix
     ./zed-editor.nix
     ./neovim
+    ./ashell.nix
   ];
 }

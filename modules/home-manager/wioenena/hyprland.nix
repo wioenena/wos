@@ -159,6 +159,7 @@
           color = "rgba(ffaa00ff)";
         };
       };
+      exec-once = [ "swaync" ];
     };
   };
 }
