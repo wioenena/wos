@@ -1,7 +1,6 @@
 { ... }:
 {
   imports = [
-    ./dconf.nix
     ./direnv.nix
     ./git.nix
     ./jetbrains-toolbox.nix

@@ -5,6 +5,7 @@
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     portalPackage =
       inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    plugins = with inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}; [ hyprbars hyprtrails ];
     settings = {
       "$mod" = "SUPER";
       "$terminal" = "kitty";
@@ -66,9 +67,9 @@
           "layersOut,     1,     1.5,   linear,       fade"
           "fadeLayersIn,  1,     1.79,  almostLinear"
           "fadeLayersOut, 1,     1.39,  almostLinear"
-          "workspaces,    1,     1.94,  almostLinear, fade"
-          "workspacesIn,  1,     1.21,  almostLinear, fade"
-          "workspacesOut, 1,     1.94,  almostLinear, fade"
+          "workspaces,    1,     1.94,  almostLinear, slide"
+          "workspacesIn,  1,     1.21,  almostLinear, slide"
+          "workspacesOut, 1,     1.94,  almostLinear, slide"
           "zoomFactor,    1,     7,     quick"
         ];
       };
@@ -87,6 +88,11 @@
         sensitivity = 0;
       };
 
+      misc = {
+        enable_swallow = true;
+        swallow_regex = "^(kitty)$";
+      };
+
       bind = [
         "$mod, Q, exec, $terminal"
         "$mod, C, killactive,"
@@ -95,6 +101,7 @@
         "$mod, V, togglefloating,"
         "$mod, R, exec, $menu"
         "$mod, P, pseudo, # dwindle"
+        "$mod, f, fullscreen"
         # "$mod, J, togglesplit, # dwindle"
         "$mod, h, movefocus, l"
         "$mod, l, movefocus, r"
@@ -129,6 +136,26 @@
         "$mod, mouse:272, movewindow"
         "$mod, mouse:273, resizewindow"
       ];
+
+      plugin = {
+        hyprbars = {
+          hyprbars-button = [
+            "rgb(ff4040), 10,, hyprctl dispatch killactive"
+            "rgb(30d158), 10"
+            "rgb(eeee11), 10,, hyprctl dispatch fullscreen 1"
+          ];
+          on_double_click = "hyprctl dispatch fullscreen 1";
+          bar_color = "rgba(00000000)";
+          bar_blur = true;
+          bar_buttons_alignment = "left";
+          bar_part_of_window = true;
+          icon_on_hover = true;
+          inactive_button_color = "rgb(8e8e93)";
+        };
+        hyprtrails = {
+          color = "rgba(ffaa00ff)";
+        };
+      };
     };
   };
 }
