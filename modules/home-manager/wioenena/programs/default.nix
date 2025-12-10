@@ -9,5 +9,6 @@
     ./vscode.nix
     ./zed-editor.nix
     ./neovim
+    ./hyprland.nix
   ];
 }
