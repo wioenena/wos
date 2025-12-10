@@ -151,7 +151,7 @@
           bar_color = "rgba(00000000)";
           bar_blur = true;
           bar_buttons_alignment = "left";
-          bar_part_of_window = true;
+          bar_part_of_window = false;
           icon_on_hover = true;
           inactive_button_color = "rgb(8e8e93)";
         };
@@ -159,7 +159,7 @@
           color = "rgba(ffaa00ff)";
         };
       };
-      exec-once = [ "swaync" "ashell" ];
+      exec-once = [ "ashell" ];
     };
   };
 }

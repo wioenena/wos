@@ -8,5 +8,6 @@
     ./zed-editor.nix
     ./neovim
     ./ashell.nix
+    ./kitty.nix
   ];
 }

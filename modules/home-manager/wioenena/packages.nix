@@ -4,11 +4,9 @@ let
 in
 {
   home.packages = with pkgs; [
-    kitty
     jetbrains-toolbox
     wl-clipboard
     inputs.awww.packages.${system}.awww
-    hyprlauncher
 
     # Fonts
     nerd-fonts.jetbrains-mono

@@ -10,11 +10,9 @@
       media_player.max_title_length = 50;
       apperance.font_name = "JetBrains Mono";
       modules.left = [
-        [
           "Clock"
-          "appLauncher"
-          "Workspaces"
-        ]
+          [ "AppLauncher" ]
+          [ "Workspaces" ]
       ];
       modules.center = [
         [
@@ -32,6 +30,7 @@
         ]
       ];
       clipboard_cmd = "cliphist-rofi-img | wl-copy";
+      app_launcher_cmd = "walker";
     };
   };
 }
