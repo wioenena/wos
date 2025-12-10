@@ -1,10 +1,14 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
+let
+  system = pkgs.stdenv.hostPlatform.system;
+in
 {
   home.packages = with pkgs; [
     kitty
     jetbrains-toolbox
-    swaynotificationcenter
-    fzf
+    wl-clipboard
+    inputs.awww.packages.${system}.awww
+    hyprlauncher
 
     # Fonts
     nerd-fonts.jetbrains-mono

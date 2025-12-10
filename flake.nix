@@ -20,6 +20,7 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    awww.url = "git+https://codeberg.org/LGFae/awww";
   };
 
   outputs =

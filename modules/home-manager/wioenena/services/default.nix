@@ -1,0 +1,6 @@
+{ ... }:
+{
+  imports = [
+    ./cliphist.nix
+  ];
+}
