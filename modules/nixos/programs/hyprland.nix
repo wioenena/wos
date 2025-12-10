@@ -8,6 +8,4 @@
     xwayland.enable = true;
     withUWSM = true;
   };
-
-  xdg.portal.extraPortals = with pkgs; [ xdg-desktop-portal-hyprland ];
 }
