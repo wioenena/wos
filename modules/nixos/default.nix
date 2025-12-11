@@ -1,8 +1,8 @@
 { ... }:
 {
   imports = [
-    ./core
+    ./system
+    ./ui
     ./programs
-    ./services
   ];
 }

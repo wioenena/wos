@@ -9,5 +9,6 @@
     ./neovim
     ./ashell.nix
     ./kitty.nix
+    ./noctalia.nix
   ];
 }

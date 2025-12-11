@@ -19,4 +19,7 @@
   ];
   systemd.packages = [ pkgs.lact ];
   systemd.services.lactd.wantedBy = [ "multi-user.target" ];
+  environment.variables = {
+    vblank_mode = 0; # DISABLE V_SYNC GLOBALLY
+  };
 }

@@ -21,6 +21,10 @@
       inputs.hyprland.follows = "hyprland";
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

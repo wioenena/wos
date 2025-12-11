@@ -5,7 +5,6 @@
     ./audio.nix
     ./boot.nix
     ./documentation.nix
-    ./environment.nix
     ./firmware.nix
     ./hardware.nix
     ./locale.nix
@@ -16,5 +15,7 @@
     ./virtualisation.nix
     ./xdg.nix
     ./packages.nix
+    ./fs.nix
+    ./services
   ];
 }
