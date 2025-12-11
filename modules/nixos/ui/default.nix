@@ -1,4 +1,8 @@
 { ... }:
 {
-  imports = [ ./display-manager.nix ./gtk.nix ./niri.nix ];
+  imports = [
+    ./display-manager.nix
+    ./gtk.nix
+    ./niri.nix
+  ];
 }

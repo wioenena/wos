@@ -15,11 +15,6 @@
     flake-utils = {
       url = "github:numtide/flake-utils";
     };
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
     awww.url = "git+https://codeberg.org/LGFae/awww";
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";

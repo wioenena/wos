@@ -17,5 +17,6 @@
     ./packages.nix
     ./fs.nix
     ./services
+    ./fonts.nix
   ];
 }

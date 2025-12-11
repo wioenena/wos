@@ -8,7 +8,6 @@
     ./git.nix
     ./steam.nix
     ./nano.nix
-    ./hyprland.nix
     ./uwsm.nix
   ];
 }
