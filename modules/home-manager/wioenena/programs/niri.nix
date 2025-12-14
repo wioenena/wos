@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
   xdg.configFile."niri/config.kdl".text = ''
     input {
         keyboard {

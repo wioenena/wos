@@ -25,6 +25,7 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
+      nix-flatpak,
       ...
     }:
     let
@@ -59,6 +60,7 @@
         modules = [
           ./hosts/desktop
           ./modules/nixos
+          nix-flatpak.nixosModules.nix-flatpak
         ];
       };
 

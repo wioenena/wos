@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   services.desktopManager.gnome.enable = true;
   services.gnome = {
     sushi.enable = true;
@@ -15,6 +16,16 @@
     core-developer-tools.enable = true;
   };
 
+  environment.systemPackages = with pkgs; [
+    gnome-boxes
+    gnome-builder
+    d-spy
+    dconf-editor
+    sysprof
+    gnome-console
+    gnome-terminal
+  ];
+
   environment.gnome.excludePackages = with pkgs; [
     decibels
     snapshot
@@ -26,12 +37,5 @@
     gnome-music
     gnome-tour
     epiphany
-  ];
-  environment.systemPackages = with pkgs; [
-    gnome-boxes
-    gnome-builder
-    d-spy
-    dconf-editor
-    sysprof
   ];
 }
