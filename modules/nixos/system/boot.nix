@@ -8,9 +8,12 @@
     kernelPackages = pkgs.linuxPackages_zen;
 
     loader = {
-      limine = {
+      grub = {
         enable = true;
+        device = "nodev";
         efiSupport = true;
+        extraGrubInstallArgs = [ "--bootloader-id=GRUB" ];
+        memtest86.enable = true;
       };
       efi = {
         canTouchEfiVariables = true;
