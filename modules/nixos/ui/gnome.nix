@@ -37,5 +37,6 @@
     gnome-music
     gnome-tour
     epiphany
+		geary
   ];
 }
