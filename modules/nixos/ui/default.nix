@@ -4,6 +4,6 @@
     ./display-manager.nix
     ./gtk.nix
     ./niri.nix
-		./gnome.nix
+    ./gnome.nix
   ];
 }

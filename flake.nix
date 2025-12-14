@@ -26,6 +26,7 @@
       nixpkgs-unstable,
       home-manager,
       nix-flatpak,
+      zen-browser,
       ...
     }:
     let
@@ -58,16 +59,19 @@
         };
 
         modules = [
+          nix-flatpak.nixosModules.nix-flatpak
           ./hosts/desktop
           ./modules/nixos
-          nix-flatpak.nixosModules.nix-flatpak
         ];
       };
 
       homeConfigurations.wioenena = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        modules = [ ./modules/home-manager/wioenena/home.nix ];
+        modules = [
+          zen-browser.homeModules.default
+          ./modules/home-manager/wioenena/home.nix
+        ];
         extraSpecialArgs = { inherit inputs pkgs-unstable; };
       };
     }

@@ -1,3 +1,6 @@
-{...}:{
-  
+{ ... }:
+{
+  programs.satty = {
+    enable = true;
+  };
 }
