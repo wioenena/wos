@@ -12,6 +12,7 @@
       "net.nokyan.Resources"
       "org.gnome.Solanum"
       "io.gitlab.adhami3310.Converter"
+      "io.github.seadve.Kooha"
     ];
   };
 }

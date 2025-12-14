@@ -10,5 +10,6 @@
     ./ashell.nix
     ./kitty.nix
     ./noctalia.nix
+    ./satty.nix
   ];
 }
