@@ -51,5 +51,6 @@
     gnome-tour
     epiphany
     geary
+    devhelp
   ];
 }
