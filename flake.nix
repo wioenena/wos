@@ -33,17 +33,18 @@
       system = "x86_64-linux";
       allowedUnfreePkgNames = import ./allowed-unfree-pkgs.nix;
       allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgNames;
-      overlay = import ./overlay;
+      wosOverlays = import ./overlays { };
+      overlays = [
+        wosOverlays.gnomeExtensions
+      ];
 
       pkgs = import nixpkgs {
-        inherit system;
-        overlays = [ overlay ];
+        inherit system overlays;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
 
       pkgs-unstable = import nixpkgs-unstable {
-        inherit system;
-        overlays = [ overlay ];
+        inherit system overlays;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
     in

@@ -24,6 +24,20 @@
     sysprof
     gnome-console
     gnome-terminal
+
+    gnome-shell-extensions
+    gnomeExtensions.dash-dash-to-dock
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.caffeine
+    gnomeExtensions.appindicator
+    gnomeExtensions.gsconnect
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.vitals
+    gnomeExtensions.just-perfection
+    gnomeExtensions.desktop-icons-ng-ding
+    gnomeExtensions.lockkeys-vaina
+    gnomeExtensions.add-add-to-desktop
+    gnomeExtensions.show-desktop-applet
   ];
 
   environment.gnome.excludePackages = with pkgs; [
