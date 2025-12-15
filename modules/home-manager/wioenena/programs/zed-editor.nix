@@ -2,7 +2,7 @@
 {
   programs.zed-editor = {
     enable = true;
-    package = pkgs.zed-editor-latest;
+    package = pkgs.zed-editor;
     extensions = [
       "dockerfile"
       "vue"

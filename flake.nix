@@ -17,7 +17,6 @@
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
-    zed-editor.url = "github:zed-industries/zed";
   };
 
   outputs =
@@ -28,7 +27,6 @@
       home-manager,
       nix-flatpak,
       zen-browser,
-      zed-editor,
       ...
     }:
     let
@@ -38,13 +36,11 @@
       wosOverlays = import ./overlays { };
       overlays = [
         wosOverlays.gnomeExtensions
-        wosOverlays.zed-editor {inherit zed-editor system;}
       ];
 
       pkgs = import nixpkgs {
         inherit system overlays;
         config.allowUnfreePredicate = allowUnfreePredicate;
-        packages.${system}.zed-editor-latest = zed-editor.packages.${system}.default;
       };
 
       pkgs-unstable = import nixpkgs-unstable {
