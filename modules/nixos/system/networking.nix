@@ -52,6 +52,7 @@ in
     enable = true;
     dnssec = "true";
     dnsovertls = "true";
+    domains = [ "~." ];
     fallbackDns = nameservers;
   };
 
