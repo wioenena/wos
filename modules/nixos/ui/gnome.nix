@@ -25,7 +25,6 @@
     dconf-editor
     sysprof
     gnome-console
-    gnome-terminal
 
     gnome-shell-extensions
     gnomeExtensions.dash-to-dock
