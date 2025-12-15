@@ -16,6 +16,9 @@
           "code.desktop"
         ];
       };
+      "org/gnome/desktop/wm/preferences" = {
+        button-layout = "appmenu:minimize,maximize,close";
+      };
       "org/gnome/shell/extensions/blur-my-shell/applications" = {
         blur = true;
         dynamic-opacity = false;
