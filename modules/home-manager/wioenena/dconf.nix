@@ -10,6 +10,7 @@
         favorite-apps = [
           "org.gnome.Settings.desktop"
           "org.gnome.Nautilus.desktop"
+          "org.gnome.Software.desktop"
           "zen-beta.desktop"
           "org.gnome.Console.desktop"
           "dev.zed.Zed.desktop"
