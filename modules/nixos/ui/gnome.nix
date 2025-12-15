@@ -18,7 +18,6 @@
 
   environment.systemPackages = with pkgs; [
     gjs
-    gsettings-desktop-schemas
 
     gnome-boxes
     gnome-builder
@@ -37,7 +36,6 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.vitals
     gnomeExtensions.just-perfection
-    gnomeExtensions.gtk4-desktop-icons-ng-ding
     gnomeExtensions.lockkeys-vaina
     gnomeExtensions.add-to-desktop
     gnomeExtensions.show-desktop-applet
