@@ -26,7 +26,7 @@
     gnome-terminal
 
     gnome-shell-extensions
-    gnomeExtensions.dash-dash-to-dock
+    gnomeExtensions.dash-to-dock
     gnomeExtensions.blur-my-shell
     gnomeExtensions.caffeine
     gnomeExtensions.appindicator
@@ -36,7 +36,7 @@
     gnomeExtensions.just-perfection
     gnomeExtensions.desktop-icons-ng-ding
     gnomeExtensions.lockkeys-vaina
-    gnomeExtensions.add-add-to-desktop
+    gnomeExtensions.add-to-desktop
     gnomeExtensions.show-desktop-applet
   ];
 
