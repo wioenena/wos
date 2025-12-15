@@ -4,5 +4,7 @@
     libnotify
     gcc
     clang
+    protonvpn-gui
+    wireguard-tools
   ];
 }

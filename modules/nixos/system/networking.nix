@@ -28,6 +28,7 @@ in
 
     firewall = {
       enable = true;
+      checkReversePath = false;
       allowedTCPPorts = [ ];
       allowedTCPPortRanges = [ ] ++ kdeConnectPortRanges;
       allowedUDPPortRanges = [ ] ++ kdeConnectPortRanges;
