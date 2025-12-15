@@ -4,7 +4,8 @@
   stdenv,
   glib,
 }:
-let uuid = "lockkeys@vaina.lt";
+let
+  uuid = "lockkeys@vaina.lt";
 in
 stdenv.mkDerivation rec {
   pname = "gnome-shell-extensions-lockkeys-vaina";

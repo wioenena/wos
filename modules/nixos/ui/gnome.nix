@@ -17,6 +17,8 @@
   };
 
   environment.systemPackages = with pkgs; [
+    gjs
+
     gnome-boxes
     gnome-builder
     d-spy
@@ -34,7 +36,7 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.vitals
     gnomeExtensions.just-perfection
-    gnomeExtensions.desktop-icons-ng-ding
+    gnomeExtensions.gtk4-desktop-icons-ng-ding
     gnomeExtensions.lockkeys-vaina
     gnomeExtensions.add-to-desktop
     gnomeExtensions.show-desktop-applet
