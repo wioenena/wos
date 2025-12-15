@@ -36,7 +36,6 @@
     gnomeExtensions.vitals
     gnomeExtensions.just-perfection
     gnomeExtensions.lockkeys-vaina
-    gnomeExtensions.add-to-desktop
     gnomeExtensions.show-desktop-applet
   ];
 
