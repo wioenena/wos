@@ -22,7 +22,5 @@
     libnotify
     protonvpn-gui
     wireguard-tools
-
-    gcc
   ];
 }

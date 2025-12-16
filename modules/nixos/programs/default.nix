@@ -8,5 +8,6 @@
     ./git.nix
     ./steam.nix
     ./nano.nix
+    ./direnv.nix
   ];
 }

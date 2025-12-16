@@ -1,7 +1,6 @@
 { ... }:
 {
   imports = [
-    ./direnv.nix
     ./git.nix
     ./zen-browser.nix
     ./vscode.nix
