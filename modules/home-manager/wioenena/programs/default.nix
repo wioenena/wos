@@ -9,5 +9,6 @@
     ./neovim
     ./kitty.nix
     ./satty.nix
+    ./brave.nix
   ];
 }
