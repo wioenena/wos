@@ -7,4 +7,5 @@
   "vscode-extension-ms-vscode-remote-remote-containers"
   "obsidian"
   "ffmpeg-full"
+  "discord"
 ]
