@@ -1,3 +1,4 @@
-{...}:{
+{ ... }:
+{
   programs.less.enable = true;
 }

@@ -14,5 +14,6 @@
     ./protonvpn.nix
     ./steam.nix
     ./zoxide.nix
+    ./ffmpeg.nix
   ];
 }
