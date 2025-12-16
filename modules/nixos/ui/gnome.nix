@@ -18,6 +18,8 @@
 
   environment.systemPackages = with pkgs; [
     gjs
+    glib
+    glibc
 
     gnome-boxes
     gnome-builder
