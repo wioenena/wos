@@ -13,6 +13,7 @@
       "org.gnome.Solanum"
       "io.gitlab.adhami3310.Converter"
       "io.github.seadve.Kooha"
+      "com.belmoussaoui.Decoder"
     ];
   };
 }

@@ -9,5 +9,7 @@
     ./kitty.nix
     ./satty.nix
     ./brave.nix
+    ./obsidian.nix
+    ./fish.nix
   ];
 }
