@@ -16,5 +16,6 @@
     ./zoxide.nix
     ./ffmpeg.nix
     ./obs.nix
+    ./discord.nix
   ];
 }
