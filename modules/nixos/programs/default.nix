@@ -1,13 +1,18 @@
 { ... }:
 {
   imports = [
+    ./bat.nix
     ./dconf.nix
-    ./fish.nix
-    ./home-manager.nix
-    ./nix-ld.nix
-    ./git.nix
-    ./steam.nix
-    ./nano.nix
     ./direnv.nix
+    ./fish.nix
+    ./git.nix
+    ./gnome-boxes.nix
+    ./home-manager.nix
+    ./less.nix
+    ./nano.nix
+    ./nix-ld.nix
+    ./protonvpn.nix
+    ./steam.nix
+    ./zoxide.nix
   ];
 }
