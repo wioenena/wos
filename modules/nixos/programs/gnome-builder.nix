@@ -1,3 +1,4 @@
-{pkgs, ...}: {
-  environment.systemPackages = [pkgs.gnome-builder];
+{ pkgs, ... }:
+{
+  environment.systemPackages = [ pkgs.gnome-builder ];
 }

@@ -1,3 +1,4 @@
-{pkgs,...}:{
-  environment.systemPackages = [pkgs.gnome-tweaks];
+{ pkgs, ... }:
+{
+  environment.systemPackages = [ pkgs.gnome-tweaks ];
 }
