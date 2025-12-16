@@ -15,5 +15,6 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.caskaydia-cove
     nerd-fonts.fira-code
+    nerd-fonts.iosevka
   ];
 }

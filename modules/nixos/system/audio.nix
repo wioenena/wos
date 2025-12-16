@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   services.pipewire = {
     enable = true;
@@ -8,4 +8,6 @@
     jack.enable = true;
     wireplumber.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [ pavucontrol ];
 }

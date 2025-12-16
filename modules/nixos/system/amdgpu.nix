@@ -11,14 +11,14 @@
   };
 
   environment.systemPackages = with pkgs; [
-    lact
     mesa-demos
     vulkan-tools
     pciutils
     clinfo
   ];
-  systemd.packages = [ pkgs.lact ];
-  systemd.services.lactd.wantedBy = [ "multi-user.target" ];
+
+  services.lact.enable = true;
+
   environment.variables = {
     vblank_mode = 0; # DISABLE V_SYNC GLOBALLY
   };
