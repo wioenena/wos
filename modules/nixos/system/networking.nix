@@ -46,6 +46,7 @@ in
 
     useDHCP = false;
     dhcpcd.enable = false;
+    wireguard.enable = true;
   };
 
   services.resolved = {

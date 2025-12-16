@@ -20,7 +20,5 @@
     eza
 
     libnotify
-    protonvpn-gui
-    wireguard-tools
   ];
 }

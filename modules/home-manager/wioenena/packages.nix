@@ -8,9 +8,5 @@ in
     wl-clipboard
     inputs.awww.packages.${system}.awww
     gnome-boxes
-
-    # Fonts
-    nerd-fonts.jetbrains-mono
-    jetbrains-mono
   ];
 }
