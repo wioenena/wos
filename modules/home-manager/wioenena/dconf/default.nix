@@ -20,6 +20,16 @@
       "org/gnome/desktop/wm/preferences" = {
         button-layout = "appmenu:minimize,maximize,close";
       };
+      "org/gtk/gtk4/settings/file-chooser" = {
+        show-hidden = true;
+      };
+      "org/gnome/Console" = {
+        audible-bell = false;
+      };
+      "org/gnome/nautilus/preferences" = {
+        show-create-link = true;
+        show-delete-permanently = true;
+      };
       "org/gnome/shell/extensions/blur-my-shell/applications" = {
         blur = true;
         dynamic-opacity = false;

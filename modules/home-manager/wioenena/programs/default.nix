@@ -11,5 +11,6 @@
     ./brave.nix
     ./obsidian.nix
     ./fish.nix
+    ./fzf.nix
   ];
 }

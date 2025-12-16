@@ -15,5 +15,6 @@
     ./steam.nix
     ./zoxide.nix
     ./ffmpeg.nix
+    ./obs.nix
   ];
 }

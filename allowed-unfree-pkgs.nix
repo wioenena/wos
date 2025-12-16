@@ -6,4 +6,5 @@
   "vscode-extension-github-copilot"
   "vscode-extension-ms-vscode-remote-remote-containers"
   "obsidian"
+  "ffmpeg-full"
 ]
