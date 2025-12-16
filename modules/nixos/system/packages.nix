@@ -13,6 +13,11 @@
     procps
     binutils
     file
+    bat
+    zoxide
+    dateutils
+    rsync
+    eza
 
     libnotify
     protonvpn-gui

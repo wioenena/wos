@@ -18,5 +18,6 @@
     ./fs.nix
     ./services
     ./fonts.nix
+    ./zram.nix
   ];
 }
