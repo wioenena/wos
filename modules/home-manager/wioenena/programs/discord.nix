@@ -1,4 +1,4 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [ pkgs.discord ];
+  home.packages= [ pkgs.discord ];
 }
