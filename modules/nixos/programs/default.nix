@@ -17,5 +17,7 @@
     ./ffmpeg.nix
     ./obs.nix
     ./discord.nix
+    ./gnome-builder.nix
+    ./gnome-tweaks.nix
   ];
 }

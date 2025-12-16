@@ -21,9 +21,6 @@
     glib
     glibc
 
-    gnome-boxes
-    gnome-builder
-    gnome-tweaks
     d-spy
     dconf-editor
     sysprof
