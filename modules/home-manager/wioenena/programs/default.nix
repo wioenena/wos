@@ -14,5 +14,6 @@
     ./fzf.nix
     ./discord.nix
     ./obs.nix
+    ./fd.nix
   ];
 }
