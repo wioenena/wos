@@ -5,10 +5,6 @@
     generateCompletions = true;
     plugins = [
       {
-        name = "fzf-fish";
-        src = pkgs.fishPlugins.fzf-fish.src;
-      }
-      {
         name = "done";
         src = pkgs.fishPlugins.done.src;
       }
