@@ -15,6 +15,8 @@
     dateutils
     rsync
     eza
+    tree
+    ripgrep
 
     libnotify
   ];

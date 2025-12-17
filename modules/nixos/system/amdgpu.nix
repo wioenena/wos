@@ -18,8 +18,4 @@
   ];
 
   services.lact.enable = true;
-
-  environment.variables = {
-    vblank_mode = 0; # DISABLE V_SYNC GLOBALLY
-  };
 }
