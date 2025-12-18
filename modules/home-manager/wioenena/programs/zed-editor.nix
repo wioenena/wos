@@ -25,13 +25,7 @@
       "aquarium-theme"
       "vscode-dark-modern"
       "min-theme"
-      "catppuccin-icons"
-      "material-icon-theme"
-      "vscode-icons"
-      "vscode-great-icons"
       "symbols"
-      "bearded-icon-theme"
-      "monospace-icon-theme"
     ];
     extraPackages = with pkgs; [ nixd ];
     userSettings = {
@@ -52,6 +46,7 @@
       ui_font_size = 18.0;
       buffer_font_size = 16;
       theme = "VSCode Dark Modern";
+      icon_theme = "Symbols Icon Theme";
     };
     mutableUserSettings = true;
     mutableUserKeymaps = true;
