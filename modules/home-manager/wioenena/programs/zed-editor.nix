@@ -17,6 +17,7 @@
       "erlang"
       "nim"
       "git-firefly"
+      "tombi"
       "macos-classic"
       "catppuccin"
       "one-dark-pro"
