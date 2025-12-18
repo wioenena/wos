@@ -14,6 +14,7 @@
       "io.gitlab.adhami3310.Converter"
       "io.github.seadve.Kooha"
       "com.belmoussaoui.Decoder"
+      "com.spotify.Client"
     ];
   };
 }
