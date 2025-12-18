@@ -9,5 +9,6 @@ in
     inputs.awww.packages.${system}.awww
     broot
     feh
+    yt-dlp
   ];
 }

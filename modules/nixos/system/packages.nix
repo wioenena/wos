@@ -17,7 +17,7 @@
     eza
     tree
     ripgrep
-
     libnotify
+    wget
   ];
 }
