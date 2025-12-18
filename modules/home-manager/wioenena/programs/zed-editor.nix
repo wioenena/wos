@@ -16,6 +16,22 @@
       "discord-presence"
       "erlang"
       "nim"
+      "git-firefly"
+      "macos-classic"
+      "catppuccin"
+      "one-dark-pro"
+      "tokyo-night"
+      "snazzy"
+      "aquarium-theme"
+      "vscode-dark-modern"
+      "min-theme"
+      "catppuccin-icons"
+      "material-icon-theme"
+      "vscode-icons"
+      "vscode-great-icons"
+      "symbols"
+      "bearded-icon-theme"
+      "monospace-icon-theme"
     ];
     extraPackages = with pkgs; [ nixd ];
     userSettings = {
@@ -35,7 +51,7 @@
       inlay_hints.enabled = true;
       ui_font_size = 18.0;
       buffer_font_size = 16;
-      theme = "Gruvbox Dark";
+      theme = "VSCode Dark Modern";
     };
     mutableUserSettings = true;
     mutableUserKeymaps = true;
