@@ -6,10 +6,6 @@
     interactiveShellInit = ''set fish_greeting'';
     plugins = [
       {
-        name = "fifc";
-        src = pkgs.fishPlugins.fifc.src;
-      }
-      {
         name = "done";
         src = pkgs.fishPlugins.done.src;
       }
