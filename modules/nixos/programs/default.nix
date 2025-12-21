@@ -17,5 +17,6 @@
     ./ffmpeg.nix
     ./gnome-builder.nix
     ./gnome-tweaks.nix
+    ./starship.nix
   ];
 }
