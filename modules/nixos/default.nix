@@ -10,7 +10,6 @@
     ./fs.nix
     ./hardware.nix
     ./locale.nix
-    ./networking.nix
     ./nix.nix
     ./packages.nix
     ./time.nix
@@ -18,6 +17,7 @@
     ./virtualisation.nix
     ./xdg.nix
     ./zram.nix
+    ./networking
     ./ui
     ./programs
   ];

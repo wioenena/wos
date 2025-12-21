@@ -7,7 +7,6 @@
     noto-fonts-color-emoji
     inter
     roboto
-    geist-font
     jetbrains-mono
     fira-code
     iosevka
