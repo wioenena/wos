@@ -15,6 +15,7 @@
     vulkan-tools
     pciutils
     clinfo
+    libva-utils
   ];
 
   services.lact.enable = true;
