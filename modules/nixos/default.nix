@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./virtualisation
     ./amdgpu.nix
     ./audio.nix
     ./boot.nix
@@ -14,7 +15,6 @@
     ./packages.nix
     ./time.nix
     ./users.nix
-    ./virtualisation.nix
     ./xdg.nix
     ./zram.nix
     ./networking

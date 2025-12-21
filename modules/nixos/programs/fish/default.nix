@@ -12,6 +12,5 @@
     done
     spark
     autopair
-    pure
   ];
 }
