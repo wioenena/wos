@@ -10,7 +10,6 @@
     ./satty.nix
     ./brave.nix
     ./obsidian.nix
-    ./fish.nix
     ./fzf.nix
     ./discord.nix
     ./obs.nix

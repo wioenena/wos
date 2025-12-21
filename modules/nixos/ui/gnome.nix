@@ -7,7 +7,6 @@
     gnome-software.enable = true;
     gnome-settings-daemon.enable = true;
     gnome-online-accounts.enable = false;
-    gnome-keyring.enable = true;
     gnome-browser-connector.enable = true;
     games.enable = false;
     core-shell.enable = true;

@@ -1,10 +1,10 @@
 { ... }:
 {
   imports = [
+    ./fish
     ./bat.nix
     ./dconf.nix
     ./direnv.nix
-    ./fish.nix
     ./git.nix
     ./gnome-boxes.nix
     ./home-manager.nix
