@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   virtualisation = {
     containers.enable = true;
@@ -8,6 +8,8 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
+
+  environment.systemPackages = [ pkgs.podman-compose ];
 
   users.users.wioenena.extraGroups = [ "podman" ];
 }

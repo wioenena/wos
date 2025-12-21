@@ -1,6 +1,8 @@
 { ... }:
 {
   imports = [
+    ./networking
+    ./programs
     ./virtualisation
     ./amdgpu.nix
     ./audio.nix
@@ -17,8 +19,8 @@
     ./users.nix
     ./xdg.nix
     ./zram.nix
-    ./networking
-    ./ui
-    ./programs
+    ./gtk.nix
+    ./gnome.nix
+    ./niri.nix
   ];
 }

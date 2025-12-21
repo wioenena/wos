@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
   services.gnome = {
     sushi.enable = true;
@@ -14,6 +15,11 @@
     core-apps.enable = true;
     core-developer-tools.enable = true;
   };
+
+  xdg.portal.extraPortals = with pkgs; [
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
+  ];
 
   environment.systemPackages = with pkgs; [
     gjs
