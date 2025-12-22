@@ -6,5 +6,6 @@
     ./gtk
     ./xdg
     ./dconf
+    ./cursor.nix
   ];
 }

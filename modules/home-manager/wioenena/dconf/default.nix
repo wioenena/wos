@@ -55,6 +55,12 @@
       "org/gnome/GWeather4" = {
         temperature-unit = "centigrade";
       };
+      "org/gnome/desktop/interface" = {
+        font-name = "Inter Medium 11";
+        document-font-name = "Inter Medium 12";
+        monospace-font-name = "JetBrains Mono Medium 11";
+        font-antialiasing = "rgba";
+      };
     };
   };
 }
