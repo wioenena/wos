@@ -16,10 +16,6 @@
     core-developer-tools.enable = true;
   };
 
-  xdg.portal.extraPortals = with pkgs; [
-
-  ];
-
   environment.systemPackages = with pkgs; [
     gjs
     glib
