@@ -13,5 +13,11 @@
     ./steam.nix
     ./zoxide.nix
     ./starship.nix
+    ./wine.nix
+    ./gamemode.nix
+    ./gamescope.nix
+    ./bottles.nix
+    ./heroic-games-launcher.nix
+    ./lutris.nix
   ];
 }

@@ -49,13 +49,13 @@ in
     kooha
     gnome-decoder
     spotify
-    ## JetBrains Apps
     jetbrains.rider
-    jetbrains.idea
+    jetbrains.idea-ultimate
     jetbrains.clion
     jetbrains.goland
     jetbrains.datagrip
     jetbrains.rust-rover
+    prismlauncher
     inputs.awww.packages.${system}.awww
 
     # Libs
