@@ -7,7 +7,7 @@
     localsearch.enable = true;
     gnome-software.enable = true;
     gnome-settings-daemon.enable = true;
-    gnome-online-accounts.enable = false;
+    gnome-online-accounts.enable = true;
     gnome-browser-connector.enable = true;
     games.enable = false;
     core-shell.enable = true;
@@ -17,8 +17,7 @@
   };
 
   xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
+
   ];
 
   environment.systemPackages = with pkgs; [
@@ -33,6 +32,7 @@
     gnome-boxes
     gnome-builder
     gnome-tweaks
+    gnome-backgrounds
 
     gnome-shell-extensions
     gnomeExtensions.dash-to-dock

@@ -18,13 +18,13 @@
       enabled = false;
     };
     "org/gnome/shell/extensions/lockkeys" = {
-      capslock-notification = "compact";
+      capslock-notification = "osd";
       capslock-indicator = "when-active";
-      numlock-notification = "compact";
+      numlock-notification = "osd";
       numlock-indicator = "when-active";
     };
     "org/gnome/shell/extensions/vitals" = {
-      icon-style = 1;
+      icon-style = 0;
     };
   };
 }

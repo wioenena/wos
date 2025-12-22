@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, lib, ... }:
 {
   imports = [
     ./apps.nix
@@ -27,6 +27,33 @@
       };
       "org/gtk/gtk4/settings/file-chooser" = {
         show-hidden = true;
+      };
+      "org/gnome/settings-daemon/plugins/power" = {
+        power-button-action = "interactive";
+      };
+      "org/gnome/shell/app-switcher" = {
+        current-workspace-only = true;
+      };
+      "org/gnome/desktop/peripherals/mouse" = {
+        natural-scroll = false;
+      };
+      "org/gnome/desktop/input-sources" = {
+        sources = [
+          (lib.hm.gvariant.mkTuple [
+            "xkb"
+            "us"
+          ])
+          (lib.hm.gvariant.mkTuple [
+            "xkb"
+            "tr"
+          ])
+        ];
+      };
+      "org/gnome/system/location" = {
+        enabled = false;
+      };
+      "org/gnome/GWeather4" = {
+        temperature-unit = "centigrade";
       };
     };
   };
