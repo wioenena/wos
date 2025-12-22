@@ -23,5 +23,6 @@
     ./zram.nix
     ./gnome.nix
     ./niri.nix
+    ./cursor.nix
   ];
 }
