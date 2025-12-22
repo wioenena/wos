@@ -48,7 +48,6 @@ in
     gnome-solanum
     kooha
     gnome-decoder
-    spotify
     jetbrains.rider
     jetbrains.idea-ultimate
     jetbrains.clion

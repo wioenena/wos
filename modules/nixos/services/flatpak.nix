@@ -4,6 +4,7 @@
     enable = true;
     packages = [
       "io.gitlab.adhami3310.Converter"
+      "com.spotify.Client"
     ];
   };
 }

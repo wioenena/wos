@@ -4,6 +4,7 @@
     ./networking
     ./programs
     ./services
+    ./security
     ./virtualisation
 
     ./amdgpu.nix

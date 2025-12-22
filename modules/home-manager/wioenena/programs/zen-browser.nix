@@ -132,7 +132,7 @@ in
       };
       search = {
         force = true;
-        default = "ddg";
+        default = "google";
         privateDefault = "ddg";
         engines = {
           "Nix Packages" = {
