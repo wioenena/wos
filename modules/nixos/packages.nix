@@ -30,7 +30,6 @@ in
     fd
     fzf
     git
-    kitty
     obs-studio
     obsidian
     satty
@@ -55,6 +54,11 @@ in
     jetbrains.datagrip
     jetbrains.rust-rover
     prismlauncher
+    imhex
+    postman
+    yaak
+    devtoolbox
+    alacritty
     inputs.awww.packages.${system}.awww
 
     # Libs

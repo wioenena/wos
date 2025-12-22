@@ -7,7 +7,7 @@
     ./zen-browser.nix
     ./vscode.nix
     ./zed-editor.nix
-    ./kitty.nix
+    ./alacritty.nix
     ./satty.nix
     ./brave.nix
     ./obsidian.nix

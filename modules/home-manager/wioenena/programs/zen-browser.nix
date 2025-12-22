@@ -36,55 +36,11 @@ in
         "uBlock0@raymondhill.net" = "ublock-origin";
       };
     };
-    profiles.default = rec {
+    profiles.default = {
       containersForce = false;
-      pinsForce = true;
-      spacesForce = true;
-      spaces = {
-        Github = {
-          id = "ad8f566c-380a-4b10-9af7-00ae5c9d3296";
-          icon = "🐙";
-          position = 2000;
-        };
-        Nix = {
-          id = "be886168-8d6c-4da5-9d95-3ec287065536";
-          icon = "❄️";
-          position = 3000;
-        };
-      };
-      pins = {
-        "Nix Awesome" = {
-          id = "01ad924d-027f-4d4e-a723-9d193e0f0251";
-          workspace = spaces.Nix.id;
-          isGroup = true;
-          isFolderCollapsed = false;
-          editedTitle = false;
-          position = 200;
-        };
-        "Nix Packages" = {
-          id = "3125e1be-571f-4686-bea9-61c25d377e2d";
-          workspace = spaces.Nix.id;
-          folderParentId = pins."Nix Awesome".id;
-          url = "https://search.nixos.org/packages";
-          position = 201;
-        };
-        "Nix Options" = {
-          id = "9f3076c7-b247-451b-a6b4-4f9e42729939";
-          workspace = spaces.Nix.id;
-          folderParentId = pins."Nix Awesome".id;
-          url = "https://search.nixos.org/options";
-          position = 202;
-        };
-        "My NixOS" = {
-          id = "56072328-7a63-4e5b-af9a-fd928d108111";
-          workspace = spaces.Nix.id;
-          folderParentId = pins."Nix Awesome".id;
-          url = "https://mynixos.com/";
-          position = 203;
-        };
-      };
+      pinsForce = false;
+      spacesForce = false;
       settings = {
-        "zen.welcome-screen.seen" = true;
         "zen.view.use-single-toolbar" = false;
         "browser.translations.automaticallyPopup" = false;
         "zen.tabs.essentials.max" = 16;

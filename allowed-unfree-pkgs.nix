@@ -15,4 +15,5 @@
   "goland"
   "datagrip"
   "rust-rover"
+  "postman"
 ]
