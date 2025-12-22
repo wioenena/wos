@@ -9,4 +9,10 @@
   "ffmpeg-full"
   "discord"
   "spotify"
+  "rider"
+  "idea-ultimate"
+  "clion"
+  "goland"
+  "datagrip"
+  "rust-rover"
 ]
