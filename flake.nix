@@ -53,7 +53,7 @@
     in
     {
       nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
-        inherit pkgs;
+        inherit system;
 
         specialArgs = {
           inherit
@@ -63,6 +63,11 @@
         };
 
         modules = [
+          {
+            nixpkgs.overlays = overlays;
+            nixpkgs.config.allowUnfreePredicate = allowUnfreePredicate;
+          }
+
           nix-flatpak.nixosModules.nix-flatpak
           stylix.nixosModules.stylix
           ./hosts/desktop
