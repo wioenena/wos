@@ -4,6 +4,7 @@
     ./networking
     ./programs
     ./virtualisation
+    ./services
 
     ./amdgpu.nix
     ./audio.nix
