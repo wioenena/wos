@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   security.rtkit.enable = true;
   services.pipewire = {
@@ -9,6 +9,4 @@
     jack.enable = true;
     wireplumber.enable = true;
   };
-
-  environment.systemPackages = with pkgs; [ pavucontrol ];
 }

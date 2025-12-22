@@ -3,8 +3,8 @@
   imports = [
     ./networking
     ./programs
-    ./virtualisation
     ./services
+    ./virtualisation
 
     ./amdgpu.nix
     ./audio.nix
@@ -12,7 +12,6 @@
     ./documentation.nix
     ./firmware.nix
     ./fonts.nix
-    ./fs.nix
     ./hardware.nix
     ./locale.nix
     ./nix.nix
@@ -21,7 +20,6 @@
     ./users.nix
     ./xdg.nix
     ./zram.nix
-    ./gtk.nix
     ./gnome.nix
     ./niri.nix
   ];

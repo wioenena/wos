@@ -30,6 +30,9 @@
     dconf-editor
     sysprof
     gnome-console
+    gnome-boxes
+    gnome-builder
+    gnome-tweaks
 
     gnome-shell-extensions
     gnomeExtensions.dash-to-dock
