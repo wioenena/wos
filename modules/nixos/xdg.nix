@@ -17,7 +17,6 @@
       extraPortals = with pkgs; [
         xdg-desktop-portal
         xdg-desktop-portal-wlr
-        xdg-desktop-portal-hyprland
         xdg-desktop-portal-gtk
         xdg-desktop-portal-gnome
       ];

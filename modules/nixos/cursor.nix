@@ -6,8 +6,8 @@
     XCURSOR_SIZE = "24";
   };
 
-  environment.etc."gtk-3.0/settings.ini".text = ''
-    [Settings]
-    gtk-cursor-theme-name=Bibata-Modern-Ice
-  '';
+  # environment.etc."gtk-3.0/settings.ini".text = ''
+  #   [Settings]
+  #   gtk-cursor-theme-name=Bibata-Modern-Ice
+  # '';
 }
