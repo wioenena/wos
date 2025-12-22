@@ -8,4 +8,5 @@
   "obsidian"
   "ffmpeg-full"
   "discord"
+  "spotify"
 ]
