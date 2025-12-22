@@ -32,7 +32,6 @@ in
     git
     obs-studio
     obsidian
-    satty
     vscode
     zed-editor
     protonvpn-gui
@@ -59,6 +58,13 @@ in
     yaak
     devtoolbox
     alacritty
+    btop
+    cava
+    clock-rs
+    fastfetch
+    gh
+    jq
+    pls
     inputs.awww.packages.${system}.awww
 
     # Libs

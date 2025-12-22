@@ -8,7 +8,6 @@
     ./vscode.nix
     ./zed-editor.nix
     ./alacritty.nix
-    ./satty.nix
     ./brave.nix
     ./obsidian.nix
     ./fzf.nix

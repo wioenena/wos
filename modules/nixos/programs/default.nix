@@ -19,5 +19,7 @@
     ./bottles.nix
     ./heroic-games-launcher.nix
     ./lutris.nix
+    ./htop.nix
+    ./tmux.nix
   ];
 }
