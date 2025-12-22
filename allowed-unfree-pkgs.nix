@@ -10,7 +10,7 @@
   "discord"
   "spotify"
   "rider"
-  "idea-ultimate"
+  "idea"
   "clion"
   "goland"
   "datagrip"

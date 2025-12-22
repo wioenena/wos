@@ -23,6 +23,5 @@
     ./zram.nix
     ./gnome.nix
     ./niri.nix
-    ./stylix.nix
   ];
 }

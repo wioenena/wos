@@ -2,7 +2,7 @@
   description = "wioenena nixos setup";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
@@ -18,7 +18,6 @@
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
-    stylix.url = "github:nix-community/stylix/release-25.11";
   };
 
   outputs =
@@ -29,7 +28,6 @@
       home-manager,
       nix-flatpak,
       zen-browser,
-      stylix,
       ...
     }:
     let
@@ -45,7 +43,6 @@
         inherit system overlays;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
-
       pkgs-unstable = import nixpkgs-unstable {
         inherit system overlays;
         config.allowUnfreePredicate = allowUnfreePredicate;
@@ -53,7 +50,7 @@
     in
     {
       nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
-        inherit system;
+        inherit system pkgs;
 
         specialArgs = {
           inherit
@@ -63,13 +60,7 @@
         };
 
         modules = [
-          {
-            nixpkgs.overlays = overlays;
-            nixpkgs.config.allowUnfreePredicate = allowUnfreePredicate;
-          }
-
           nix-flatpak.nixosModules.nix-flatpak
-          stylix.nixosModules.stylix
           ./hosts/desktop
           ./modules/nixos
         ];

@@ -47,7 +47,7 @@ in
     kooha
     gnome-decoder
     jetbrains.rider
-    jetbrains.idea-ultimate
+    jetbrains.idea
     jetbrains.clion
     jetbrains.goland
     jetbrains.datagrip
