@@ -6,6 +6,5 @@
     ./gtk
     ./xdg
     ./dconf
-    ./stylix.nix
   ];
 }
