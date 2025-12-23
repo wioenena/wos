@@ -38,22 +38,23 @@
       overlays = [
         wosOverlays.gnomeExtensions
       ];
-
-      pkgs = import nixpkgs {
-        inherit system overlays;
-        config.allowUnfreePredicate = allowUnfreePredicate;
-      };
     in
     {
       nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
-        inherit system pkgs;
+        inherit system;
         specialArgs = {
           inherit inputs;
         };
         modules = [
+          {
+            nixpkgs.overlays = overlays;
+            nixpkgs.config.allowUnfreePredicate = allowUnfreePredicate;
+          }
+
           nix-flatpak.nixosModules.nix-flatpak
           stylix.nixosModules.stylix
-          home-manager.nixosModules.home-manager {
+          home-manager.nixosModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.wioenena = ./modules/home-manager/wioenena/home.nix;

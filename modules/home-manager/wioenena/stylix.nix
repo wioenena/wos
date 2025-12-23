@@ -1,4 +1,4 @@
-{ pkgs,osConfig, ... }:
+{ pkgs, osConfig, ... }:
 {
   stylix = {
     enable = osConfig.stylix.enable;
