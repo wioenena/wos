@@ -20,5 +20,6 @@
     ./lutris.nix
     ./htop.nix
     ./tmux.nix
+    ./mangohud.nix
   ];
 }
