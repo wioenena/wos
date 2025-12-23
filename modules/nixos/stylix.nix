@@ -1,11 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   stylix = {
     enable = true;
     enableReleaseChecks = true;
     autoEnable = false;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     cursor = {
       name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;
@@ -30,9 +30,6 @@
       };
     };
     targets = {
-      gtk.enable = true;
-      gnome.enable = true;
-      gnome-text-editor.enable = true;
       fish.enable = true;
     };
   };

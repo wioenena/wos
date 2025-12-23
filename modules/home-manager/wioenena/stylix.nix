@@ -2,8 +2,6 @@
 {
   stylix = {
     targets = {
-      gnome = osConfig.stylix.targets.gnome;
-      gnome-text-editor = osConfig.stylix.targets.gnome-text-editor;
       fish = osConfig.stylix.targets.fish;
       bat.enable = true;
       btop.enable = true;

@@ -8,6 +8,9 @@
   dconf = {
     enable = true;
     settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+      };
       "org/gnome/shell" = {
         favorite-apps = [
           "org.gnome.Settings.desktop"
