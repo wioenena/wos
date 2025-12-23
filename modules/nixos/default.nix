@@ -6,7 +6,6 @@
     ./services
     ./security
     ./virtualisation
-
     ./amdgpu.nix
     ./audio.nix
     ./boot.nix

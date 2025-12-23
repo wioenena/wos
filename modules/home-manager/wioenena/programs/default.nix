@@ -2,7 +2,6 @@
 {
   imports = [
     ./neovim
-
     ./git.nix
     ./zen-browser.nix
     ./vscode.nix

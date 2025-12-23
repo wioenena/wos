@@ -2,7 +2,6 @@
 {
   imports = [
     ./fish
-
     ./bat.nix
     ./dconf.nix
     ./direnv.nix

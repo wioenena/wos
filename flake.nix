@@ -47,11 +47,9 @@
     {
       nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
         inherit system pkgs;
-
         specialArgs = {
           inherit inputs;
         };
-
         modules = [
           nix-flatpak.nixosModules.nix-flatpak
           stylix.nixosModules.stylix
@@ -62,9 +60,9 @@
 
       homeConfigurations.wioenena = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
         modules = [
           zen-browser.homeModules.default
+          stylix.homeModules.stylix
           ./modules/home-manager/wioenena/home.nix
         ];
         extraSpecialArgs = { inherit inputs; };
