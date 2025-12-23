@@ -18,6 +18,9 @@
     awww.url = "git+https://codeberg.org/LGFae/awww";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     stylix.url = "github:nix-community/stylix/release-25.11";
+    grub2-themes = {
+      url = "github:vinceliuice/grub2-themes";
+    };
   };
 
   outputs =
@@ -28,6 +31,7 @@
       nix-flatpak,
       zen-browser,
       stylix,
+      grub2-themes,
       ...
     }:
     let
@@ -53,6 +57,7 @@
 
           nix-flatpak.nixosModules.nix-flatpak
           stylix.nixosModules.stylix
+          grub2-themes.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
   stylix = {
     enable = true;
@@ -31,9 +31,9 @@
     };
     icons = {
       enable = true;
-      dark = "MoreWaita";
-      light = "MoreWaita";
-      package = pkgs.morewaita-icon-theme;
+      dark = "WhiteSur";
+      light = "WhiteSur";
+      package = pkgs.whitesur-icon-theme;
     };
   };
 }

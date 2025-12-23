@@ -21,7 +21,6 @@
     ./users.nix
     ./xdg.nix
     ./zram.nix
-    ./gnome.nix
     ./niri.nix
     ./stylix.nix
   ];

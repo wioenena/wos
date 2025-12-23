@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [
-    ./game
+    ./gnome
   ];
 }
