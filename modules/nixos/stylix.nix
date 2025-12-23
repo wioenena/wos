@@ -7,8 +7,8 @@
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     cursor = {
-      name = "Bibata-Modern-Ice";
-      package = pkgs.bibata-cursors;
+      name = "macOS";
+      package = pkgs.apple-cursor;
       size = 24;
     };
     fonts = {
@@ -30,7 +30,6 @@
       };
     };
     targets = {
-      fish.enable = true;
     };
   };
 }

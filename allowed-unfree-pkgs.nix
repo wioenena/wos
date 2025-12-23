@@ -16,4 +16,5 @@
   "datagrip"
   "rust-rover"
   "postman"
+  "apple_cursor"
 ]
