@@ -3,6 +3,7 @@
   stylix = {
     enable = true;
     enableReleaseChecks = true;
+    autoEnable = false;
     polarity = "dark";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     cursor = {
@@ -11,8 +12,6 @@
       size = 24;
     };
     targets = {
-      grub.enable = false;
-      qt.enable = false;
     };
   };
 }
