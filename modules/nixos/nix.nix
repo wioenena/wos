@@ -13,7 +13,7 @@
     };
 
     optimise.automatic = true;
-    optimise.dates = ["03:45"];
+    optimise.dates = [ "03:45" ];
     settings.auto-optimise-store = true;
   };
 }

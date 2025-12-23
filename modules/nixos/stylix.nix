@@ -31,11 +31,9 @@
     };
     icons = {
       enable = true;
-      dark = "WhiteSur-dark";
-      light = "WhiteSur-light";
-      package = pkgs.whitesur-icon-theme;
-    };
-    targets = {
+      dark = "MoreWaita";
+      light = "MoreWaita";
+      package = pkgs.morewaita-icon-theme;
     };
   };
 }
