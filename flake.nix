@@ -53,19 +53,20 @@
         modules = [
           nix-flatpak.nixosModules.nix-flatpak
           stylix.nixosModules.stylix
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.wioenena = ./modules/home-manager/wioenena/home.nix;
+
+            home-manager.sharedModules = [
+              stylix.homeModules.stylix
+              zen-browser.homeModules.default
+            ];
+            home-manager.extraSpecialArgs = { inherit inputs; };
+          }
           ./hosts/desktop
           ./modules/nixos
         ];
-      };
-
-      homeConfigurations.wioenena = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [
-          zen-browser.homeModules.default
-          stylix.homeModules.stylix
-          ./modules/home-manager/wioenena/home.nix
-        ];
-        extraSpecialArgs = { inherit inputs; };
       };
     }
     // inputs.flake-utils.lib.eachSystem [ "x86_64-linux" ] (
