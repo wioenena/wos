@@ -13,6 +13,7 @@
     "org/gnome/shell/extensions/dash-to-dock" = {
       dash-max-icon-size = 40;
       custom-theme-shrink = true;
+      click-action = "minimize";
     };
     "org/gnome/shell/extensions/gsconnect" = {
       enabled = false;
