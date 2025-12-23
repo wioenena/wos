@@ -17,6 +17,7 @@
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    stylix.url = "github:nix-community/stylix/release-25.11";
   };
 
   outputs =
@@ -26,6 +27,7 @@
       home-manager,
       nix-flatpak,
       zen-browser,
+      stylix,
       ...
     }:
     let
@@ -52,6 +54,7 @@
 
         modules = [
           nix-flatpak.nixosModules.nix-flatpak
+          stylix.nixosModules.stylix
           ./hosts/desktop
           ./modules/nixos
         ];

@@ -9,6 +9,6 @@
     dev.enable = true;
     info.enable = true;
     nixos.enable = true;
-    nixos.includeAllModules = true;
+    nixos.includeAllModules = false;
   };
 }
