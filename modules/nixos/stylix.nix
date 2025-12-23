@@ -5,7 +5,7 @@
     enableReleaseChecks = true;
     autoEnable = false;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
     cursor = {
       name = "macOS";
       package = pkgs.apple-cursor;
@@ -28,6 +28,12 @@
         package = pkgs.noto-fonts-color-emoji;
         name = "Noto Color Emoji";
       };
+    };
+    icons = {
+      enable = true;
+      dark = "WhiteSur-dark";
+      light = "WhiteSur-light";
+      package = pkgs.whitesur-icon-theme;
     };
     targets = {
     };
