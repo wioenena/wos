@@ -60,7 +60,6 @@
             home-manager.users.wioenena = ./modules/home-manager/wioenena/home.nix;
 
             home-manager.sharedModules = [
-              stylix.homeModules.stylix
               zen-browser.homeModules.default
             ];
             home-manager.extraSpecialArgs = { inherit inputs; };
