@@ -10,6 +10,7 @@
     ./amdgpu.nix
     ./audio.nix
     ./boot.nix
+    ./console.nix
     ./documentation.nix
     ./firmware.nix
     ./fonts.nix
@@ -22,6 +23,6 @@
     ./xdg.nix
     ./zram.nix
     ./stylix.nix
-    ./gdm.nix
+    ./gnome.nix
   ];
 }
