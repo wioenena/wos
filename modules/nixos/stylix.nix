@@ -35,5 +35,7 @@
       light = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
     };
+    targets = {
+    };
   };
 }

@@ -45,7 +45,6 @@ in
     resources
     gnome-solanum
     kooha
-    gnome-decoder
     jetbrains.rider
     jetbrains.idea
     jetbrains.clion

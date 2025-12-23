@@ -1,4 +1,0 @@
-{ ... }:
-{
-  programs.niri.enable = true;
-}
