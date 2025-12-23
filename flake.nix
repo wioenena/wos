@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,7 +23,6 @@
     inputs@{
       self,
       nixpkgs,
-      nixpkgs-unstable,
       home-manager,
       nix-flatpak,
       zen-browser,
@@ -43,20 +41,13 @@
         inherit system overlays;
         config.allowUnfreePredicate = allowUnfreePredicate;
       };
-      pkgs-unstable = import nixpkgs-unstable {
-        inherit system overlays;
-        config.allowUnfreePredicate = allowUnfreePredicate;
-      };
     in
     {
       nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
         inherit system pkgs;
 
         specialArgs = {
-          inherit
-            inputs
-            pkgs-unstable
-            ;
+          inherit inputs;
         };
 
         modules = [
@@ -73,7 +64,7 @@
           zen-browser.homeModules.default
           ./modules/home-manager/wioenena/home.nix
         ];
-        extraSpecialArgs = { inherit inputs pkgs-unstable; };
+        extraSpecialArgs = { inherit inputs; };
       };
     }
     // inputs.flake-utils.lib.eachSystem [ "x86_64-linux" ] (
