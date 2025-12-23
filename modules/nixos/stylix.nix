@@ -12,6 +12,7 @@
     };
     targets = {
       grub.enable = false;
+      qt.enable = false;
     };
   };
 }
