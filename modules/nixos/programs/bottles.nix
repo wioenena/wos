@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   environment.systemPackages = [
-    pkgs.bottles
+    (pkgs.bottles.override {
+      removeWarningPopup = true;
+    })
   ];
 }
