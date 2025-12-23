@@ -5,12 +5,15 @@
       "nix-command"
       "flakes"
     ];
-    settings.auto-optimise-store = true;
 
     gc = {
       automatic = true;
       dates = "weekly";
       options = "--delete-older-than 7d";
     };
+
+    optimise.automatic = true;
+    optimise.dates = ["03:45"];
+    settings.auto-optimise-store = true;
   };
 }
