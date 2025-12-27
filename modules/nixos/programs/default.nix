@@ -69,6 +69,7 @@ in
     playerctl
     alacritty
     swaylock
+    vicinae
 
     # Bottles
     (bottles.override {
