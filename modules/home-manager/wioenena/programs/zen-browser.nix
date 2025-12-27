@@ -40,54 +40,7 @@ in
       containersForce = false;
       pinsForce = false;
       spacesForce = false;
-      settings = {
-        "zen.view.use-single-toolbar" = false;
-        "browser.translations.automaticallyPopup" = false;
-        "zen.tabs.essentials.max" = 16;
-        "browser.translations.mostRecentTargetLanguages" = "en,tr";
-        "general.autoScroll" = true;
-        "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
-        "browser.uiCustomization.state" = builtins.toJSON {
-          "placements" = {
-            "widget-overflow-fixed-list" = [ ];
-            "nav-bar" = [
-              "back-button"
-              "forward-button"
-              "stop-reload-button"
-              "customizableui-special-spring1"
-              "vertical-spacer"
-              "urlbar-container"
-              "customizableui-special-spring2"
-              "unified-extensions-button"
-              "ublock0_raymondhill_net-browser-action"
-              "addon_darkreader_org-browser-action"
-              "vpn_proton_ch-browser-action"
-              "78272b6fa58f4a1abaac99321d503a20_proton_me-browser-action"
-            ];
-            "toolbar-menubar" = [
-              "menubar-items"
-            ];
-            "TabsToolbar" = [
-              "tabbrowser-tabs"
-            ];
-            "vertical-tabs" = [ ];
-            "PersonalToolbar" = [
-              "import-button"
-              "personal-bookmarks"
-            ];
-            "zen-sidebar-top-buttons" = [
-              "zen-toggle-compact-mode"
-            ];
-            "zen-sidebar-foot-buttons" = [
-              "downloads-button"
-              "zen-workspaces-button"
-              "zen-create-new-button"
-            ];
-          };
-        };
-      };
       search = {
-        force = true;
         default = "google";
         privateDefault = "ddg";
         engines = {
