@@ -27,6 +27,7 @@
       "vscode-dark-modern"
       "min-theme"
       "symbols"
+      "kdl"
     ];
     extraPackages = with pkgs; [ nixd ];
     userSettings = {
