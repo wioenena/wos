@@ -30,6 +30,8 @@ in
       enable = true;
       enableFishIntegration = true;
     };
+    kdeconnect.enable = true;
+    waybar.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -63,6 +65,10 @@ in
     fastfetch
     jq
     pls
+    xwayland-satellite
+    playerctl
+    alacritty
+    swaylock
 
     # Bottles
     (bottles.override {

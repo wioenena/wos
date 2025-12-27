@@ -35,7 +35,6 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.caffeine
     gnomeExtensions.appindicator
-    gnomeExtensions.gsconnect
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.vitals
     gnomeExtensions.just-perfection

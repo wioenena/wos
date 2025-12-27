@@ -41,6 +41,7 @@ in
       pinsForce = false;
       spacesForce = false;
       search = {
+        force = true;
         default = "google";
         privateDefault = "ddg";
         engines = {
