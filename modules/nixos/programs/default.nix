@@ -8,6 +8,7 @@ in
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
+    ./niri.nix
   ];
 
   programs = {
@@ -23,10 +24,6 @@ in
     htop.enable = true;
     less.enable = true;
     nano.enable = true;
-    niri = {
-      enable = true;
-      useNautilus = true;
-    };
     starship.enable = true;
     tmux.enable = true;
     zoxide = {
@@ -140,5 +137,7 @@ in
 
     # Eyedropper
     eyedropper
+
+    # Brave
   ];
 }
