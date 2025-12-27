@@ -131,5 +131,14 @@ in
 
     # Awww
     inputs.awww.packages.${system}.awww
+
+    # Switcheroo
+    switcheroo
+
+    # Curtail
+    curtail
+
+    # Eyedropper
+    eyedropper
   ];
 }
