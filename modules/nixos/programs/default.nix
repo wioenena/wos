@@ -1,4 +1,7 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
+let
+  system = pkgs.stdenv.hostPlatform.system;
+in
 {
   imports = [
     ./fish
@@ -32,28 +35,101 @@
     };
   };
 
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
+    # Common
+    coreutils
+    gnutar
+    findutils
+    diffutils
+    gnugrep
+    gnused
+    gawk
+    util-linux
+    procps
+    binutils
+    file
+    dateutils
+    rsync
+    eza
+    tree
+    ripgrep
+    wget
+    curl
+    wl-clipboard
+    feh
+    yt-dlp
+    home-manager
+    fzf
+    pavucontrol
+    kooha
+    btop
+    fastfetch
+    jq
+    pls
+
     # Bottles
-    (pkgs.bottles.override {
+    (bottles.override {
       removeWarningPopup = true;
     })
 
     # Heroic Games Launcher
-    pkgs.heroic
+    heroic
 
     # Lutris
-    pkgs.lutris
+    lutris
 
     # Mangohud
-    pkgs.mangohud
-    pkgs.mangojuice
+    mangohud
+    mangojuice
 
-    # Btop
-    pkgs.btop
+    # Prism Launcher
+    prismlauncher
 
     # Wine
-    pkgs.wineWowPackages.stableFull
-    pkgs.wineWowPackages.waylandFull
-    pkgs.winetricks
+    wineWowPackages.stableFull
+    wineWowPackages.waylandFull
+    winetricks
+
+    # Discord
+    discord
+
+    # OBS Studio
+    obs-studio
+
+    # Obsidian
+    obsidian
+
+    # VSCode
+    vscode
+
+    # Zed editor
+    zed-editor
+
+    # JetBrains Toolbox
+    jetbrains-toolbox
+
+    # ImHex
+    imhex
+
+    # Postman
+    postman
+
+    # Yaak
+    yaak
+
+    # DevToolBox
+    devtoolbox
+
+    # Cava
+    cava
+
+    # Clock-RS
+    clock-rs
+
+    # Github CLI
+    gh
+
+    # Awww
+    inputs.awww.packages.${system}.awww
   ];
 }
