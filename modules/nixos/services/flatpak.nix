@@ -8,6 +8,7 @@
       "me.proton.Pass"
 
       "com.spotify.Client"
+      "com.transmissionbt.Transmission"
     ];
   };
 }
