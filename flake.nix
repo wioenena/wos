@@ -20,6 +20,11 @@
     grub2-themes = {
       url = "github:vinceliuice/grub2-themes";
     };
+    elephant.url = "github:abenz1267/elephant";
+    walker = {
+      url = "github:abenz1267/walker";
+      inputs.elephant.follows = "elephant";
+    };
   };
 
   outputs =
@@ -30,6 +35,7 @@
       nix-flatpak,
       zen-browser,
       grub2-themes,
+      walker,
       ...
     }:
     let
@@ -63,6 +69,7 @@
 
             home-manager.sharedModules = [
               zen-browser.homeModules.default
+              walker.homeManagerModules.default
             ];
             home-manager.extraSpecialArgs = { inherit inputs; };
           }

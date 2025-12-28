@@ -22,6 +22,6 @@
     ./users.nix
     ./xdg.nix
     ./zram.nix
-    ./gnome.nix
+    ./displayManager.nix
   ];
 }
