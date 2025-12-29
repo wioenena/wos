@@ -8,7 +8,7 @@
     doc.enable = true;
     dev.enable = true;
     info.enable = true;
-    nixos.enable = true;
+    nixos.enable = false;
     nixos.includeAllModules = false;
   };
 }

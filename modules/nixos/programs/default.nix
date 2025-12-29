@@ -30,8 +30,6 @@ in
       enable = true;
       enableFishIntegration = true;
     };
-    kdeconnect.enable = true;
-    waybar.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -64,12 +62,8 @@ in
     btop
     fastfetch
     jq
-    pls
-    xwayland-satellite
     playerctl
     alacritty
-    swaylock
-    walker
 
     # Bottles
     (bottles.override {
@@ -133,9 +127,6 @@ in
     # Github CLI
     gh
 
-    # Awww
-    inputs.awww.packages.${system}.awww
-
     # Switcheroo
     switcheroo
 
@@ -146,5 +137,6 @@ in
     eyedropper
 
     # Brave
+    brave
   ];
 }

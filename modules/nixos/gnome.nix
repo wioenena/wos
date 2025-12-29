@@ -9,12 +9,30 @@
 
   # Extensions
   environment.systemPackages = with pkgs.gnomeExtensions; [
+    arcmenu
+    pano
     dash-to-dock
+    gsconnect
+    caffeine
+    appindicator
+    places-status-indicator
+    lockkeys-vaina
   ];
 
   # Excluded packages
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
+    gnome-contacts
+    gnome-music
+    decibels
+    epiphany
+    papers
+    simple-scan
+    snapshot
+    geary
+    yelp
+    devhelp
+    gnome-secrets
   ];
 
   qt = {
