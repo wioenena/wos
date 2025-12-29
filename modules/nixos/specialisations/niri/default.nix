@@ -3,7 +3,7 @@ let
   system = pkgs.stdenv.hostPlatform.system;
 in
 {
-  specialisation.niri = {
+  specialisation.Niri = {
     inheritParentConfig = true;
     configuration = {
       system.nixos.tags = [ "Niri" ];
