@@ -8,14 +8,17 @@
   };
 
   # Extensions
-  environment.systemPackages = with pkgs.gnomeExtensions; [
-    pkgs.gnome-shell-extensions
-    dash-to-dock
-    gsconnect
-    caffeine
-    clipboard-indicator
-    lockkeys-vaina
-  ];
+  environment.systemPackages =
+    with pkgs;
+    [ gnome-boxes ]
+    ++ (with pkgs.gnomeExtensions; [
+      pkgs.gnome-shell-extensions
+      dash-to-dock
+      gsconnect
+      caffeine
+      clipboard-indicator
+      lockkeys-vaina
+    ]);
 
   # Excluded packages
   environment.gnome.excludePackages = with pkgs; [
@@ -36,6 +39,6 @@
   qt = {
     enable = true;
     platformTheme = "gnome";
-    style = "adwaita-dark";
+    style = "adwaita";
   };
 }
