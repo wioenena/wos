@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./neovim
+    ./neovim.nix
     ./niri
     ./zen-browser.nix
     ./vscode.nix
