@@ -5,11 +5,10 @@
       enable = true;
       config = {
         common = {
-          default = [ "gtk" ];
+          default = "gnome";
         };
       };
       extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
         xdg-desktop-portal-gtk
       ];
     };

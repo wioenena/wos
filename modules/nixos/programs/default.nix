@@ -60,6 +60,7 @@
     jq
     playerctl
     stow
+    unzip
 
     # Bottles
     (bottles.override {
