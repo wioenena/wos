@@ -1,11 +1,6 @@
 { ... }:
 {
   dconf.settings = {
-    "org/gnome/shell/extensions/blur-my-shell/applications" = {
-      blur = true;
-      dynamic-opacity = false;
-      whitelist = [ "org.gnome.Console" ];
-    };
     "org/gnome/shell/extensions/clipboard-indicator" = {
       notify-on-copy = true;
       clear-on-boot = true;
@@ -23,9 +18,6 @@
       capslock-indicator = "when-active";
       numlock-notification = "osd";
       numlock-indicator = "when-active";
-    };
-    "org/gnome/shell/extensions/vitals" = {
-      icon-style = 0;
     };
   };
 }

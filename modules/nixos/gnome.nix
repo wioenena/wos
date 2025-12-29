@@ -9,13 +9,12 @@
 
   # Extensions
   environment.systemPackages = with pkgs.gnomeExtensions; [
-    arcmenu
-    pano
+    pkgs.gnome-shell-extensions
+    apps
     dash-to-dock
     gsconnect
     caffeine
-    appindicator
-    places-status-indicator
+    clipboard-indicator
     lockkeys-vaina
   ];
 

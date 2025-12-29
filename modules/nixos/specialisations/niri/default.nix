@@ -3,9 +3,10 @@ let
   system = pkgs.stdenv.hostPlatform.system;
 in
 {
-  specialisation.Niri = {
+  specialisation.niri = {
     inheritParentConfig = true;
     configuration = {
+      system.nixos.tags = [ "Niri" ];
       programs.niri = {
         enable = true;
         useNautilus = true;
