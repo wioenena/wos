@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   nix = {
     settings.experimental-features = [
@@ -16,4 +16,6 @@
     optimise.dates = [ "03:45" ];
     settings.auto-optimise-store = true;
   };
+
+  environment.systemPackages = [ pkgs.nixd ];
 }
