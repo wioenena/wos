@@ -1,4 +1,7 @@
 { inputs, pkgs, ... }:
+let
+  system = pkgs.stdenv.hostPlatform.system;
+in
 {
   specialisation.Niri = {
     inheritParentConfig = true;
@@ -14,6 +17,7 @@
         swaylock
         xwayland-satellite
         inputs.awww.packages.${system}.awww
+        inputs.walker.packages.${system}.walker
       ];
     };
   };
