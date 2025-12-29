@@ -1,7 +1,12 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
+let
+  system = pkgs.stdenv.hostPlatform.system;
+in
 {
   imports = [
     ./fish
+    ./niri
+    ./hyprland
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
@@ -26,6 +31,8 @@
       enable = true;
       enableFishIntegration = true;
     };
+    waybar.enable = true;
+    kdeconnect.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -61,6 +68,14 @@
     playerctl
     stow
     unzip
+    swaylock
+    xwayland-satellite
+    alacritty
+    swaynotificationcenter
+    grim
+    slurp
+    inputs.awww.packages.${system}.awww
+    inputs.walker.packages.${system}.walker
 
     # Bottles
     (bottles.override {
