@@ -37,7 +37,7 @@ in
 
   environment.systemPackages = with pkgs; [
     # Common
-    coreutils
+    coreutils-full
     gnutar
     findutils
     diffutils
@@ -55,6 +55,7 @@ in
     ripgrep
     wget
     curl
+    psmisc
     wl-clipboard
     feh
     yt-dlp
