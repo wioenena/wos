@@ -1,14 +1,10 @@
-{ inputs, pkgs, ... }:
-let
-  system = pkgs.stdenv.hostPlatform.system;
-in
+{ pkgs, ... }:
 {
   imports = [
     ./fish
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
-    ./niri.nix
   ];
 
   programs = {

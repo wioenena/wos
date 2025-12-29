@@ -10,7 +10,6 @@
   # Extensions
   environment.systemPackages = with pkgs.gnomeExtensions; [
     pkgs.gnome-shell-extensions
-    apps
     dash-to-dock
     gsconnect
     caffeine
