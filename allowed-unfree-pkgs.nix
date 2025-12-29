@@ -17,4 +17,5 @@
   "rust-rover"
   "postman"
   "apple_cursor"
+  "davinci-resolve"
 ]

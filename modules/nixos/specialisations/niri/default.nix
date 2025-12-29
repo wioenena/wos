@@ -17,6 +17,7 @@ in
       environment.systemPackages = with pkgs; [
         swaylock
         xwayland-satellite
+        alacritty
         inputs.awww.packages.${system}.awww
         inputs.walker.packages.${system}.walker
       ];

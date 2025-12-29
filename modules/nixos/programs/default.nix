@@ -59,7 +59,7 @@
     fastfetch
     jq
     playerctl
-    alacritty
+    stow
 
     # Bottles
     (bottles.override {
@@ -134,5 +134,8 @@
 
     # Brave
     brave
+
+    # Davinci Resolve
+    davinci-resolve
   ];
 }
