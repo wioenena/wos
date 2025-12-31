@@ -20,6 +20,7 @@
           "org.gnome.Console.desktop"
           "dev.zed.Zed.desktop"
           "code.desktop"
+          "org.gnome.Extensions.desktop"
         ];
       };
       "org/gnome/desktop/wm/preferences" = {
