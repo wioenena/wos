@@ -62,7 +62,6 @@ in
     home-manager
     fzf
     pavucontrol
-    kooha
     btop
     fastfetch
     jq
@@ -101,15 +100,6 @@ in
     wineWowPackages.waylandFull
     winetricks
 
-    # Discord
-    discord
-
-    # OBS Studio
-    obs-studio
-
-    # Obsidian
-    obsidian
-
     # VSCode
     vscode
 
@@ -119,17 +109,8 @@ in
     # JetBrains Toolbox
     jetbrains-toolbox
 
-    # ImHex
-    imhex
-
-    # Postman
-    postman
-
     # Yaak
     yaak
-
-    # DevToolBox
-    devtoolbox
 
     # Cava
     cava
@@ -139,15 +120,6 @@ in
 
     # Github CLI
     gh
-
-    # Switcheroo
-    switcheroo
-
-    # Curtail
-    curtail
-
-    # Eyedropper
-    eyedropper
 
     # Brave
     brave
