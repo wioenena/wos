@@ -32,7 +32,6 @@ in
       enableFishIntegration = true;
     };
     waybar.enable = true;
-    kdeconnect.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
