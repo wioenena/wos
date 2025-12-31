@@ -2,7 +2,6 @@
 {
   imports = [
     ./firewall.nix
-    ./ipv6.nix
     ./networkmanager.nix
     ./resolved.nix
     ./wireguard.nix

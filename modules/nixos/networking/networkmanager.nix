@@ -15,9 +15,6 @@
           ignore-auto-dns = true;
           dns = "1.1.1.1;1.0.0.1;";
         };
-        ipv6 = {
-          method = "disabled";
-        };
       };
     };
   };
