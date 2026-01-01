@@ -31,8 +31,6 @@ in
       enable = true;
       enableFishIntegration = true;
     };
-    waybar.enable = true;
-    kdeconnect.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -68,12 +66,14 @@ in
     playerctl
     stow
     unzip
-    swaylock
     xwayland-satellite
     alacritty
+    swaylock
     swaynotificationcenter
     grim
     slurp
+    waybar
+    kdePackages.kdeconnect-kde
     inputs.awww.packages.${system}.awww
     inputs.walker.packages.${system}.walker
 

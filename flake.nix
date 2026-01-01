@@ -28,16 +28,12 @@
   };
 
   outputs =
-    inputs@{
+    {
       self,
       nixpkgs,
       home-manager,
-      nix-flatpak,
-      zen-browser,
-      grub2-themes,
-      walker,
       ...
-    }:
+    }@inputs:
     let
       system = "x86_64-linux";
       allowedUnfreePkgNames = import ./allowed-unfree-pkgs.nix;
@@ -59,8 +55,8 @@
             nixpkgs.config.allowUnfreePredicate = allowUnfreePredicate;
           }
 
-          nix-flatpak.nixosModules.nix-flatpak
-          grub2-themes.nixosModules.default
+          inputs.nix-flatpak.nixosModules.nix-flatpak
+          inputs.grub2-themes.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -68,8 +64,8 @@
             home-manager.users.wioenena = ./modules/home-manager/wioenena/home.nix;
 
             home-manager.sharedModules = [
-              zen-browser.homeModules.default
-              walker.homeManagerModules.default
+              inputs.zen-browser.homeModules.default
+              inputs.walker.homeManagerModules.default
             ];
             home-manager.extraSpecialArgs = { inherit inputs; };
           }
