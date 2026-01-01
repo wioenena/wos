@@ -29,6 +29,11 @@
           clipboard-indicator.extensionUuid
           kimpanel.extensionUuid
           lockkeys-vaina.extensionUuid
+          "apps-menu@gnome-shell-extensions.gcampax.github.com"
+          "places-menu@gnome-shell-extensions.gcampax.github.com"
+          "drive-menu@gnome-shell-extensions.gcampax.github.com"
+          "system-monitor@gnome-shell-extensions.gcampax.github.com"
+          "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
         ];
       };
       "org/gnome/desktop/wm/preferences" = {

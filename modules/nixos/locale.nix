@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   i18n = {
     defaultLocale = "en_US.UTF-8";
@@ -7,5 +7,8 @@
       enable = true;
       type = "fcitx5";
     };
+  };
+  environment.variables = {
+    GTK_IM_MODULE = lib.mkForce "";
   };
 }

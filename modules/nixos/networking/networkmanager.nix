@@ -3,6 +3,12 @@
   networking.networkmanager = {
     enable = true;
     dns = "systemd-resolved";
+    settings = {
+      connectivity = {
+        uri = "https://nmcheck.gnome.org/check_network_status.txt";
+        interval = 300;
+      };
+    };
     ensureProfiles.profiles = {
       "Wired Connection 1" = {
         connection = {
