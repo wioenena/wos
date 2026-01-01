@@ -18,6 +18,7 @@
       caffeine
       clipboard-indicator
       lockkeys-vaina
+      kimpanel
     ]);
 
   # Excluded packages

@@ -22,6 +22,14 @@
           "code.desktop"
           "org.gnome.Extensions.desktop"
         ];
+        enabled-extensions = with pkgs.gnomeExtensions; [
+          dash-to-dock.extensionUuid
+          gsconnect.extensionUuid
+          caffeine.extensionUuid
+          clipboard-indicator.extensionUuid
+          kimpanel.extensionUuid
+          lockkeys-vaina.extensionUuid
+        ];
       };
       "org/gnome/desktop/wm/preferences" = {
         button-layout = "appmenu:minimize,maximize,close";
