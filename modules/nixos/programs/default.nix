@@ -5,8 +5,6 @@ in
 {
   imports = [
     ./fish
-    ./niri
-    ./hyprland
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
@@ -66,16 +64,9 @@ in
     playerctl
     stow
     unzip
-    xwayland-satellite
     alacritty
-    swaylock
-    swaynotificationcenter
     grim
     slurp
-    waybar
-    kdePackages.kdeconnect-kde
-    inputs.awww.packages.${system}.awww
-    inputs.walker.packages.${system}.walker
 
     # Bottles
     (bottles.override {
