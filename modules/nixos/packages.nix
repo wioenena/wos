@@ -13,5 +13,9 @@
     e2fsprogs
     btrfs-progs
     ntfs3g
+
+    # Themes
+    apple-cursor
+    yaru-theme
   ];
 }

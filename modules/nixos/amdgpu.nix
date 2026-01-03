@@ -16,6 +16,8 @@
     pciutils
     clinfo
     libva-utils
+    amdgpu_top
+    radeontop
   ];
 
   services.lact.enable = true;

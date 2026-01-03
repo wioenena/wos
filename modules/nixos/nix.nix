@@ -17,5 +17,8 @@
     settings.auto-optimise-store = true;
   };
 
-  environment.systemPackages = [ pkgs.nixd ];
+  environment.systemPackages = [
+    pkgs.nixd
+    pkgs.nil
+  ];
 }

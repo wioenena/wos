@@ -9,7 +9,10 @@
     };
   };
 
-  environment.systemPackages = [ pkgs.podman-compose ];
+  environment.systemPackages = [
+    pkgs.podman-compose
+    pkgs.podman-desktop
+  ];
 
   users.users.wioenena.extraGroups = [ "podman" ];
 }

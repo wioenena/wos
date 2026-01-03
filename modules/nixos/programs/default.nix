@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }:
 let
   system = pkgs.stdenv.hostPlatform.system;
+
 in
 {
   imports = [
@@ -19,7 +20,6 @@ in
       nix-direnv.enable = true;
       enableFishIntegration = true;
     };
-    gamemode.enable = true;
     htop.enable = true;
     less.enable = true;
     nano.enable = true;
@@ -32,7 +32,7 @@ in
   };
 
   environment.systemPackages = with pkgs; [
-    # Common
+    # Terminal-Based
     coreutils-full
     gnutar
     findutils
@@ -57,65 +57,61 @@ in
     yt-dlp
     home-manager
     fzf
-    pavucontrol
     btop
     fastfetch
     jq
     playerctl
     stow
     unzip
-    alacritty
     grim
     slurp
 
-    # Bottles
+    # GUI
+    pavucontrol
+    alacritty
     (bottles.override {
       removeWarningPopup = true;
     })
-
-    # Heroic Games Launcher
     heroic
-
-    # Lutris
     lutris
-
-    # Mangohud
     mangohud
-    mangojuice
-
-    # Prism Launcher
     prismlauncher
-
-    # Wine
     wineWowPackages.stableFull
     wineWowPackages.waylandFull
     winetricks
-
-    # VSCode
     vscode
-
-    # Zed editor
     zed-editor
-
-    # JetBrains Toolbox
     jetbrains-toolbox
-
-    # Yaak
     yaak
-
-    # Cava
     cava
-
-    # Clock-RS
     clock-rs
-
-    # Github CLI
     gh
-
-    # Brave
     brave
-
-    # Davinci Resolve
     davinci-resolve
+    discord
+    bleachbit
+    curtail
+    easyeffects
+    eyedropper
+    gimp
+    goverlay
+    handbrake
+    identity
+    kooha
+    mousai
+    mpv
+    obs-studio
+    obsidian
+    switcheroo
+    textpieces
+    thunderbird
+    vlc
+    postman
+    pinta
+    czkawka
+    devtoolbox
+    imhex
+    localsend
+    upscayl
   ];
 }
