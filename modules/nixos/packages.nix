@@ -5,11 +5,7 @@
     libnotify
     gtk3
     gtk4
-    (pkgs.ffmpeg-full.override {
-      withMetal = false;
-      withUnfree = true;
-      withDebug = false;
-    })
+    pkgs.ffmpeg-full
 
     # Filesystem utilities
     dosfstools
