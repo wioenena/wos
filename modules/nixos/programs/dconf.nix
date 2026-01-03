@@ -53,6 +53,9 @@
           "org/gnome/desktop/wm/preferences" = {
             button-layout = "appmenu:minimize,maximize,close";
           };
+          "org/gtk/settings/file-chooser" = {
+            show-hidden = true;
+          };
           "org/gtk/gtk4/settings/file-chooser" = {
             show-hidden = true;
           };
@@ -86,9 +89,9 @@
           "org/gnome/Console" = {
             audible-bell = false;
           };
-          "org/gnome/nautilus/prefences" = {
+          "org/gnome/nautilus/preferences" = {
             show-create-link = true;
-            show-delete-permanenrtly = true;
+            show-delete-permanently = true;
           };
 
           # Extensions
@@ -113,6 +116,9 @@
             capslock-indicator = "when-active";
             numlock-notification = "osd";
             numlock-indicator = "when-active";
+          };
+          "org/gnome/shell/extensions/ding" = {
+            icon-size = "small";
           };
         };
       }
