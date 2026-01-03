@@ -9,11 +9,11 @@ in
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
+    ./dconf.nix
   ];
 
   programs = {
     bat.enable = true;
-    dconf.enable = true;
     direnv = {
       enable = true;
       loadInNixShell = true;
@@ -115,5 +115,6 @@ in
     upscayl
     gnome-tweaks
     gnome-boxes
+    shotcut
   ];
 }

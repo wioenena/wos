@@ -5,6 +5,5 @@
     ./services
     ./gtk
     ./xdg
-    ./dconf
   ];
 }

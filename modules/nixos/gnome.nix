@@ -15,7 +15,7 @@
     caffeine
     clipboard-indicator
     lockkeys-vaina
-    kimpanel
+    vitals
   ];
 
   # Excluded packages
