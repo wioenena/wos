@@ -46,7 +46,7 @@
               "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
             ];
           };
-          "org/gnome/desktop/wm/prefences" = {
+          "org/gnome/desktop/wm/preferences" = {
             button-layout = "appmenu:minimize,maximize,close";
           };
           "org/gtk/gtk4/settings/file-chooser" = {
