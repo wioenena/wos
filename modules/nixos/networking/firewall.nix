@@ -10,6 +10,7 @@ in
 {
   networking.firewall = {
     enable = true;
+    backend = "nftables";
     checkReversePath = false;
     allowedTCPPorts = [ ];
     allowedTCPPortRanges = [ ] ++ kdeConnectPortRanges;

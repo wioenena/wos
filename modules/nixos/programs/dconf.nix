@@ -4,7 +4,7 @@
     enable = true;
     profiles.user.databases = [
       {
-        lockAll = true;
+        lockAll = false;
         settings = {
           "org/gnome/desktop/interface" = {
             color-scheme = "prefer-dark";
@@ -96,9 +96,10 @@
             clear-on-boot = true;
           };
           "org/gnome/shell/extensions/dash-to-dock" = {
-            dash-max-icon-size = lib.gvariant.mkUint32 40;
+            dash-max-icon-size = lib.gvariant.mkInt32 40;
             custom-theme-shrink = true;
             click-action = "minimize";
+            show-apps-at-top = true;
           };
           "org/gnome/shell/extensions/gsconnect" = {
             enabled = false;

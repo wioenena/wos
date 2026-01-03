@@ -20,5 +20,6 @@
 
     useDHCP = false;
     dhcpcd.enable = false;
+    nftables.enable = true;
   };
 }
