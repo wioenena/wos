@@ -8,18 +8,15 @@
   };
 
   # Extensions
-  environment.systemPackages =
-    with pkgs;
-    [ gnome-boxes ]
-    ++ (with pkgs.gnomeExtensions; [
-      pkgs.gnome-shell-extensions
-      dash-to-dock
-      gsconnect
-      caffeine
-      clipboard-indicator
-      lockkeys-vaina
-      kimpanel
-    ]);
+  environment.systemPackages = with pkgs.gnomeExtensions; [
+    pkgs.gnome-shell-extensions
+    dash-to-dock
+    gsconnect
+    caffeine
+    clipboard-indicator
+    lockkeys-vaina
+    kimpanel
+  ];
 
   # Excluded packages
   environment.gnome.excludePackages = with pkgs; [

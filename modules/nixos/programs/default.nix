@@ -113,5 +113,7 @@ in
     imhex
     localsend
     upscayl
+    gnome-tweaks
+    gnome-boxes
   ];
 }
