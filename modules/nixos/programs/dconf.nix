@@ -20,6 +20,9 @@
           "org/gnome/desktop/sound" = {
             theme-name = "Yaru";
           };
+          "org/gnome/mutter" = {
+            experimental-features = [ ];
+          };
           "org/gnome/shell" = {
             favorite-apps = [
               "org.gnome.Settings.desktop"
