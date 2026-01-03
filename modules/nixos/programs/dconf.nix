@@ -48,6 +48,7 @@
               lockkeys-vaina.extensionUuid
               vitals.extensionUuid
               desktop-icons-ng-ding.extensionUuid
+              add-to-desktop.extensionUuid
             ];
           };
           "org/gnome/desktop/wm/preferences" = {

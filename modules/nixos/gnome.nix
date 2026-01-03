@@ -21,6 +21,7 @@
     lockkeys-vaina
     vitals
     desktop-icons-ng-ding
+    add-to-desktop
   ];
 
   # Excluded packages
