@@ -1,7 +1,6 @@
 { inputs, pkgs, ... }:
 let
   system = pkgs.stdenv.hostPlatform.system;
-
 in
 {
   imports = [
@@ -10,6 +9,7 @@ in
     ./nix-ld.nix
     ./steam.nix
     ./dconf.nix
+    ./neovim.nix
   ];
 
   programs = {
@@ -35,6 +35,10 @@ in
     zoxide = {
       enable = true;
       enableFishIntegration = true;
+    };
+    fzf = {
+      keybindings = true;
+      fuzzyCompletion = true;
     };
   };
 

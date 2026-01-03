@@ -8,6 +8,8 @@
     '';
     shellAliases = {
       man = "batman";
+      ls = "eza --all --long --icons always";
+      cd = "z";
     };
   };
 
