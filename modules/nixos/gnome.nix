@@ -9,13 +9,18 @@
 
   # Extensions
   environment.systemPackages = with pkgs.gnomeExtensions; [
-    pkgs.gnome-shell-extensions
+    applications-menu
+    places-status-indicator
+    removable-drive-menu
+    workspace-indicator
+    background-logo
     dash-to-dock
     gsconnect
     caffeine
     clipboard-indicator
     lockkeys-vaina
     vitals
+    desktop-icons-ng-ding
   ];
 
   # Excluded packages

@@ -36,17 +36,18 @@
             ];
 
             enabled-extensions = with pkgs.gnomeExtensions; [
+              applications-menu.extensionUuid
+              places-status-indicator.extensionUuid
+              removable-drive-menu.extensionUuid
+              workspace-indicator.extensionUuid
+              background-logo.extensionUuid
               dash-to-dock.extensionUuid
               gsconnect.extensionUuid
               caffeine.extensionUuid
               clipboard-indicator.extensionUuid
-              kimpanel.extensionUuid
               lockkeys-vaina.extensionUuid
               vitals.extensionUuid
-              "apps-menu@gnome-shell-extensions.gcampax.github.com"
-              "places-menu@gnome-shell-extensions.gcampax.github.com"
-              "drive-menu@gnome-shell-extensions.gcampax.github.com"
-              "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
+              desktop-icons-ng-ding.extensionUuid
             ];
           };
           "org/gnome/desktop/wm/preferences" = {
