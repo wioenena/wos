@@ -6,6 +6,9 @@
     interactiveShellInit = ''
       set fish_greeting
     '';
+    shellAliases = {
+      man = "batman";
+    };
   };
 
   environment.systemPackages = with pkgs.fishPlugins; [

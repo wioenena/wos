@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   documentation = {
     enable = true;
@@ -11,4 +11,8 @@
     nixos.enable = false;
     nixos.includeAllModules = false;
   };
+  environment.systemPackages = with pkgs; [
+    man-pages
+    man-pages-posix
+  ];
 }
