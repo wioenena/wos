@@ -21,7 +21,7 @@
             theme-name = "Yaru";
           };
           "org/gnome/mutter" = {
-            experimental-features = [ ];
+            experimental-features = lib.gvariant.mkEmptyArray lib.gvariant.type.string;
           };
           "org/gnome/shell" = {
             favorite-apps = [
