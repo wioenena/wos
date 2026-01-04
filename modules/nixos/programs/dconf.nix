@@ -8,7 +8,7 @@
         settings = {
           "org/gnome/desktop/interface" = {
             color-scheme = "prefer-dark";
-            accent-color = "teal";
+            accent-color = "orange";
             font-name = "Inter Medium 11";
             document-font-name = "Inter Medium 12";
             monospace-font-name = "JetBrains Mono Medium 11";
