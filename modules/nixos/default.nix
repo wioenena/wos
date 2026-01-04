@@ -14,7 +14,6 @@
     ./documentation.nix
     ./firmware.nix
     ./fonts.nix
-    ./hardware.nix
     ./locale.nix
     ./nix.nix
     ./packages.nix

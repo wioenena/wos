@@ -49,6 +49,7 @@
               vitals.extensionUuid
               desktop-icons-ng-ding.extensionUuid
               add-to-desktop.extensionUuid
+              show-desktop-applet.extensionUuid
             ];
           };
           "org/gnome/desktop/wm/preferences" = {

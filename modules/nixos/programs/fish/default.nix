@@ -6,7 +6,6 @@
     interactiveShellInit = ''
       echo "Welcome $(whoami)!"
       set fish_greeting
-      ${pkgs.fastfetch}/bin/fastfetch
     '';
     shellAliases = {
       man = "batman";
