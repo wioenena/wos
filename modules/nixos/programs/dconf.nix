@@ -51,6 +51,7 @@
               add-to-desktop.extensionUuid
               show-desktop-applet.extensionUuid
               media-controls.extensionUuid
+              appindicator.extensionUuid
             ];
           };
           "org/gnome/desktop/wm/preferences" = {
@@ -113,7 +114,7 @@
             custom-background-color = true;
             background-color = "rgb(0, 0, 0)";
             transparency-mode = "FIXED";
-            background-opacity = lib.gvariant.mkDouble 0.45;
+            background-opacity = lib.gvariant.mkDouble 0.85;
           };
           "org/gnome/shell/extensions/gsconnect" = {
             enabled = false;

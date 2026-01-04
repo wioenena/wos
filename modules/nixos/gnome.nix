@@ -24,6 +24,7 @@
     add-to-desktop
     show-desktop-applet
     media-controls
+    appindicator
   ];
 
   # Excluded packages
