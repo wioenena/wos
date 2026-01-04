@@ -127,6 +127,9 @@
           "org/gnome/shell/extensions/ding" = {
             icon-size = "small";
           };
+          "org/gnome/shell/extensions/mediacontrols" = {
+            extension-position = "Right";
+          };
         };
       }
     ];

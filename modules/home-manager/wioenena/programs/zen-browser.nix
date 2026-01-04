@@ -21,7 +21,7 @@
         Cryptomining = true;
         Fingerprinting = true;
       };
-   };
+    };
     profiles.default = {
       containersForce = false;
       pinsForce = false;
