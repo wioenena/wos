@@ -50,7 +50,6 @@
               desktop-icons-ng-ding.extensionUuid
               add-to-desktop.extensionUuid
               show-desktop-applet.extensionUuid
-              just-perfection.extensionUuid
               media-controls.extensionUuid
             ];
           };
