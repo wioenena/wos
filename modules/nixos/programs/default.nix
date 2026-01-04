@@ -40,6 +40,7 @@ in
       keybindings = true;
       fuzzyCompletion = true;
     };
+    virt-manager.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
