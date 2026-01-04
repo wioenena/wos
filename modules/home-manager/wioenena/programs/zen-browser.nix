@@ -1,12 +1,4 @@
 { pkgs, ... }:
-let
-  mkExtensionSettings = builtins.mapAttrs (
-    _: pluginId: {
-      install_url = "https://addons.mozilla.org/firefox/downloads/latest/${pluginId}/latest.xpi";
-      installation_mode = "force_installed";
-    }
-  );
-in
 {
   programs.zen-browser = {
     enable = true;
@@ -29,13 +21,7 @@ in
         Cryptomining = true;
         Fingerprinting = true;
       };
-      ExtensionSettings = mkExtensionSettings {
-        "addon@darkreader.org" = "darkreader";
-        "78272b6fa58f4a1abaac99321d503a20@proton.me" = "proton-pass";
-        "vpn@proton.ch" = "proton-vpn-firefox-extension";
-        "uBlock0@raymondhill.net" = "ublock-origin";
-      };
-    };
+   };
     profiles.default = {
       containersForce = false;
       pinsForce = false;
