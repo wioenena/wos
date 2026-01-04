@@ -109,6 +109,10 @@
             custom-theme-shrink = true;
             click-action = "minimize";
             show-apps-at-top = true;
+            custom-background-color = true;
+            background-color = "rgb(0, 0, 0)";
+            transparency-mode = "FIXED";
+            background-opacity = lib.gvariant.mkDouble 0.45;
           };
           "org/gnome/shell/extensions/gsconnect" = {
             enabled = false;
