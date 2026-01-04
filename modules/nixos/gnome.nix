@@ -23,6 +23,8 @@
     desktop-icons-ng-ding
     add-to-desktop
     show-desktop-applet
+    just-perfection
+    media-controls
   ];
 
   # Excluded packages
