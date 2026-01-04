@@ -126,7 +126,6 @@ in
     localsend
     upscayl
     gnome-tweaks
-    gnome-boxes
     shotcut
   ];
 }
