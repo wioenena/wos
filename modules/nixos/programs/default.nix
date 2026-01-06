@@ -5,12 +5,12 @@ in
 {
   imports = [
     ./fish
+    ./windowManagers
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
     ./dconf.nix
     ./neovim.nix
-    ./hyprland.nix
   ];
 
   programs = {
@@ -42,7 +42,6 @@ in
       fuzzyCompletion = true;
     };
     virt-manager.enable = true;
-    dankMaterialShell.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
