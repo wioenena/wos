@@ -18,7 +18,6 @@
   };
 
   environment.systemPackages = [
-    pkgs.nixd
     pkgs.nil
   ];
 }
