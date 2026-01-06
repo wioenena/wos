@@ -3,9 +3,6 @@ let
   gnomeExtensions = with pkgs.gnomeExtensions; [
     applications-menu
     places-status-indicator
-    removable-drive-menu
-    workspace-indicator
-    background-logo
     dash-to-dock
     gsconnect
     caffeine

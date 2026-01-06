@@ -37,9 +37,6 @@
             enabled-extensions = with pkgs.gnomeExtensions; [
               applications-menu.extensionUuid
               places-status-indicator.extensionUuid
-              removable-drive-menu.extensionUuid
-              workspace-indicator.extensionUuid
-              background-logo.extensionUuid
               dash-to-dock.extensionUuid
               gsconnect.extensionUuid
               caffeine.extensionUuid
