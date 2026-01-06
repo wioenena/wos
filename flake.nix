@@ -22,6 +22,10 @@
       url = "github:abenz1267/walker";
       inputs.elephant.follows = "elephant";
     };
+    dms = {
+      url = "github:AvengeMedia/DankMaterialShell/stable";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -53,6 +57,7 @@
           }
 
           inputs.nix-flatpak.nixosModules.nix-flatpak
+          inputs.dms.nixosModules.dankMaterialShell
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
