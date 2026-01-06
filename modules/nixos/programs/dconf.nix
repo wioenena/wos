@@ -29,7 +29,7 @@
               "org.gnome.Nautilus.desktop"
               "org.gnome.Software.desktop"
               "zen-beta.desktop"
-              "org.gnome.Console.desktop"
+              "org.gnome.Ptyxis.desktop"
               "dev.zed.Zed.desktop"
               "code.desktop"
             ];
@@ -54,6 +54,11 @@
           };
           "org/gnome/desktop/wm/preferences" = {
             button-layout = "appmenu:minimize,maximize,close";
+          };
+          "org/gnome/desktop/wm/keybindings" = {
+            switch-applications = lib.gvariant.mkEmptyArray lib.gvariant.type.string;
+            switch-windows = [ "<Alt>Tab" ];
+            switch-windows-backward = [ "<Shift><Alt>Tab" ];
           };
           "org/gtk/settings/file-chooser" = {
             show-hidden = true;
@@ -96,6 +101,12 @@
             show-delete-permanently = true;
           };
 
+          "org/gnome/Ptyxis" = {
+            restore-window-size = false;
+            default-columns = lib.gvariant.mkUint32 80;
+            default-rows = lib.gvariant.mkUint32 24;
+          };
+
           # Extensions
           "org/gnome/shell/extensions/workspace-indicator" = {
             embed-previews = false;
@@ -124,10 +135,7 @@
             numlock-indicator = "when-active";
           };
           "org/gnome/shell/extensions/ding" = {
-            icon-size = "small";
-          };
-          "org/gnome/shell/extensions/mediacontrols" = {
-            extension-position = "Right";
+            icon-size = "tiny";
           };
         };
       }

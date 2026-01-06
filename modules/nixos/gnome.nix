@@ -1,14 +1,6 @@
 { pkgs, ... }:
-{
-  services.desktopManager.gnome.enable = true;
-  services.gnome = {
-    core-developer-tools.enable = true;
-    gnome-user-share.enable = false;
-    rygel.enable = false;
-  };
-
-  # Extensions
-  environment.systemPackages = with pkgs.gnomeExtensions; [
+let
+  gnomeExtensions = with pkgs.gnomeExtensions; [
     applications-menu
     places-status-indicator
     removable-drive-menu
@@ -25,6 +17,17 @@
     show-desktop-applet
     appindicator
   ];
+in
+{
+  services.desktopManager.gnome.enable = true;
+  services.gnome = {
+    core-developer-tools.enable = true;
+    gnome-user-share.enable = false;
+    rygel.enable = false;
+  };
+
+  # Extensions
+  environment.systemPackages = with pkgs; [ ptyxis ] ++ gnomeExtensions;
 
   # Excluded packages
   environment.gnome.excludePackages = with pkgs; [
@@ -40,6 +43,7 @@
     yelp
     devhelp
     gnome-secrets
+    gnome-console
   ];
 
   qt = {
