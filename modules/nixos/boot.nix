@@ -2,7 +2,7 @@
 let
   terminusGrubFont = pkgs.runCommand "grub-terminus.pf2" { } ''
     ${pkgs.grub2}/bin/grub-mkfont --output $out \
-      ${pkgs.terminus_font}/share/fonts/terminus/ter-x32n.pcf.gz
+      ${pkgs.terminus_font}/share/fonts/terminus/ter-x16n.pcf.gz
   '';
 in
 {
