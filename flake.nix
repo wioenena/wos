@@ -17,9 +17,6 @@
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
-    grub2-themes = {
-      url = "github:vinceliuice/grub2-themes";
-    };
     elephant.url = "github:abenz1267/elephant";
     walker = {
       url = "github:abenz1267/walker";
@@ -56,7 +53,6 @@
           }
 
           inputs.nix-flatpak.nixosModules.nix-flatpak
-          inputs.grub2-themes.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

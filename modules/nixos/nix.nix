@@ -19,5 +19,6 @@
 
   environment.systemPackages = [
     pkgs.nil
+    pkgs.nixd
   ];
 }

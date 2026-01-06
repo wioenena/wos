@@ -1,4 +1,10 @@
 { pkgs, ... }:
+let
+  terminusGrubFont = pkgs.runCommand "grub-terminus.pf2" { } ''
+    ${pkgs.grub2}/bin/grub-mkfont --output $out \
+      ${pkgs.terminus_font}/share/fonts/terminus/ter-x32n.pcf.gz
+  '';
+in
 {
   boot = {
     initrd = {
@@ -14,11 +20,8 @@
         efiSupport = true;
         extraGrubInstallArgs = [ "--bootloader-id=GRUB" ];
         memtest86.enable = true;
-      };
-      grub2-theme = {
-        enable = true;
-        theme = "stylish";
-        footer = true;
+        font = "${terminusGrubFont}";
+        gfxmodeEfi = "1920x1080";
       };
       efi = {
         canTouchEfiVariables = true;

@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 let
   gnomeExtensions = with pkgs.gnomeExtensions; [
     applications-menu
@@ -16,11 +16,12 @@ let
   ];
 in
 {
-  services.desktopManager.gnome.enable = true;
+  services.desktopManager.gnome.enable = lib.mkDefault true;
   services.gnome = {
-    core-developer-tools.enable = true;
+    core-developer-tools.enable = lib.mkDefault true;
     gnome-user-share.enable = false;
     rygel.enable = false;
+    gnome-online-accounts.enable = false;
   };
 
   # Extensions
