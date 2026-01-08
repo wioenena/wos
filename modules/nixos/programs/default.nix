@@ -10,41 +10,38 @@ in
 {
   imports = [
     ./fish
+    ./dconf
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
-    ./dconf.nix
     ./neovim.nix
   ];
 
   programs = {
-    bat = {
-      enable = true;
-      extraPackages = with pkgs.bat-extras; [
-        batdiff
-        batman
-        prettybat
-      ];
-    };
-    direnv = {
-      enable = true;
-      loadInNixShell = true;
-      nix-direnv.enable = true;
-      enableFishIntegration = true;
-    };
+    bat.enable = true;
+    bat.extraPackages = with pkgs.bat-extras; [
+      batdiff
+      batman
+      prettybat
+    ];
+
+    direnv.enable = true;
+    direnv.loadInNixShell = true;
+    direnv.nix-direnv.enable = true;
+    direnv.enableFishIntegration = true;
+
     htop.enable = true;
     less.enable = true;
     nano.enable = true;
     starship.enable = true;
     tmux.enable = true;
-    zoxide = {
-      enable = true;
-      enableFishIntegration = true;
-    };
-    fzf = {
-      keybindings = true;
-      fuzzyCompletion = true;
-    };
+
+    zoxide.enable = true;
+    zoxide.enableFishIntegration = true;
+
+    fzf.keybindings = true;
+    fzf.fuzzyCompletion = true;
+
     virt-manager.enable = true;
   };
 
@@ -133,6 +130,9 @@ in
     kooha
     mpv
     switcheroo
+    ## For window managers
+    quickshell # For dms-shell
+    pkgs-unstable.dms-shell
     ## Extras
     obsidian
     thunderbird
@@ -141,8 +141,5 @@ in
     upscayl
     gnome-tweaks
 
-    # For window managers
-    quickshell # For dms-shell
-    pkgs-unstable.dms-shell
   ];
 }
