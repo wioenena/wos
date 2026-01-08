@@ -7,7 +7,6 @@
     ./security
     ./virtualisation
     ./specialisations
-    ./amdgpu.nix
     ./audio.nix
     ./boot.nix
     ./console.nix

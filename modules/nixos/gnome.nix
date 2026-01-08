@@ -18,7 +18,6 @@ in
 {
   services.desktopManager.gnome.enable = lib.mkDefault true;
   services.gnome = {
-    core-developer-tools.enable = lib.mkDefault true;
     gnome-user-share.enable = false;
     rygel.enable = false;
     gnome-online-accounts.enable = false;

@@ -4,10 +4,8 @@
     amdgpu.initrd.enable = true;
     amdgpu.opencl.enable = true;
 
-    graphics = {
-      enable = true;
-      enable32Bit = true;
-    };
+    graphics.enable = true;
+    graphics.enable32Bit = true;
   };
 
   environment.systemPackages = with pkgs; [

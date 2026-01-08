@@ -1,11 +1,15 @@
-{ inputs, pkgs, ... }:
+{
+  inputs,
+  pkgs,
+  pkgs-unstable,
+  ...
+}:
 let
   system = pkgs.stdenv.hostPlatform.system;
 in
 {
   imports = [
     ./fish
-    ./windowManagers
     ./git.nix
     ./nix-ld.nix
     ./steam.nix
@@ -45,7 +49,7 @@ in
   };
 
   environment.systemPackages = with pkgs; [
-    # Terminal-Based
+    # Common for linux experience
     coreutils-full
     gnutar
     findutils
@@ -59,74 +63,86 @@ in
     file
     dateutils
     rsync
-    eza
     tree
     ripgrep
     wget
     curl
     psmisc
-    wl-clipboard
     feh
-    yt-dlp
-    home-manager
     fzf
     btop
     fastfetch
+    eza
+    ## Common for wayland experience
+    wl-clipboard
+    grim
+    slurp
+    ## Tools
+    yt-dlp
     jq
     playerctl
     stow
-    unzip
-    grim
-    slurp
+    clock-rs
+    cava
+    ## Home Manager
+    home-manager
+    ## For github
+    gh
 
     # GUI
+    ## Audio
     pavucontrol
+    mousai
+    ## Terminal
     alacritty
+    ## Gaming & Windows compatibility
     (bottles.override {
       removeWarningPopup = true;
     })
     heroic
     lutris
-    mangohud
     prismlauncher
     wineWowPackages.stableFull
     wineWowPackages.waylandFull
     winetricks
+    mangohud
+    goverlay
+    ## Developer experience
     vscode
     zed-editor
     jetbrains-toolbox
     yaak
-    cava
-    clock-rs
-    gh
+    postman
+    devtoolbox
+    eyedropper
+    imhex
+    ## Browsers
     brave
+    ## Contect creator
     davinci-resolve
+    gimp
+    obs-studio
+    pinta
+    shotcut
+    ## Communication
     discord
-    bleachbit
+    ## Tools
     curtail
     easyeffects
-    eyedropper
-    gimp
-    goverlay
     handbrake
-    identity
     kooha
-    mousai
     mpv
-    obs-studio
-    obsidian
     switcheroo
-    textpieces
+    ## Extras
+    obsidian
     thunderbird
     vlc
-    postman
-    pinta
-    czkawka
-    devtoolbox
-    imhex
     localsend
     upscayl
     gnome-tweaks
-    shotcut
+
+    # For window managers
+    quickshell # For dms-shell
+    pkgs-unstable.dms-shell
   ];
 }
