@@ -41,8 +41,8 @@ in
 
     fzf.keybindings = true;
     fzf.fuzzyCompletion = true;
-
-    virt-manager.enable = true;
+    obs-studio.enable = true;
+    localsend.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -89,7 +89,7 @@ in
     # GUI
     ## Audio
     pavucontrol
-    mousai
+    easyeffects
     ## Terminal
     alacritty
     ## Gaming & Windows compatibility
@@ -97,11 +97,11 @@ in
       removeWarningPopup = true;
     })
     heroic
-    lutris
     prismlauncher
     wineWowPackages.stableFull
     wineWowPackages.waylandFull
     winetricks
+    protonplus
     mangohud
     goverlay
     ## Developer experience
@@ -109,37 +109,19 @@ in
     zed-editor
     jetbrains-toolbox
     yaak
-    postman
-    devtoolbox
-    eyedropper
-    imhex
     ## Browsers
     brave
     ## Contect creator
     davinci-resolve
-    gimp
-    obs-studio
-    pinta
-    shotcut
-    ## Communication
-    discord
     ## Tools
-    curtail
-    easyeffects
-    handbrake
-    kooha
     mpv
-    switcheroo
+    imhex
     ## For window managers
     quickshell # For dms-shell
     pkgs-unstable.dms-shell
     ## Extras
-    obsidian
-    thunderbird
-    vlc
-    localsend
-    upscayl
     gnome-tweaks
-
+    protonvpn-gui
+    proton-pass
   ];
 }

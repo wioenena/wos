@@ -8,7 +8,6 @@ let
     caffeine
     clipboard-indicator
     lockkeys-vaina
-    vitals
     desktop-icons-ng-ding
     add-to-desktop
     show-desktop-applet

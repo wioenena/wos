@@ -39,7 +39,7 @@
     let
       system = "x86_64-linux";
       allowedUnfreePkgNames = import ./allowed-unfree-pkgs.nix;
-      allowUnfreePredicate = pkg: builtins.elem (builtins.getAttr "pname" pkg) allowedUnfreePkgNames;
+      allowUnfreePredicate = pkg: builtins.elem (nixpkgs.lib.getName pkg) allowedUnfreePkgNames;
       wosOverlays = import ./overlays { };
       overlays = [
         wosOverlays.gnomeExtensions

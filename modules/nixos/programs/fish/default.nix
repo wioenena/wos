@@ -11,6 +11,7 @@
       man = "batman";
       ls = "eza --all --long --icons always --group-directories-first";
       cd = "z";
+      zed = "zeditor";
     };
   };
 
