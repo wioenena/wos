@@ -17,7 +17,6 @@
       url = "github:numtide/flake-utils";
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
-    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     elephant.url = "github:abenz1267/elephant";
     walker = {
       url = "github:abenz1267/walker";
@@ -61,7 +60,6 @@
             nixpkgs.config.allowUnfreePredicate = allowUnfreePredicate;
           }
 
-          inputs.nix-flatpak.nixosModules.nix-flatpak
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
