@@ -36,9 +36,6 @@ in
     snapshot
     geary
     yelp
-    devhelp
-    gnome-secrets
-    gnome-console
   ];
 
   qt = {

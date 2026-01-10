@@ -11,6 +11,7 @@ let
     "org.upscayl.Upscayl"
     "com.github.finefindus.eyedropper"
     "com.github.huluti.Curtail"
+    "io.gitlab.adhami3310.Converter"
 
     # --- Multimedia (Video/Audio Players & Editors) ---
     "com.spotify.Client"
@@ -44,7 +45,6 @@ let
 
     # --- Productivity & Office ---
     "md.obsidian.Obsidian"
-    "io.gitlab.adhami3310.Converter"
 
     # --- Security & Privacy ---
     "com.protonvpn.www"
