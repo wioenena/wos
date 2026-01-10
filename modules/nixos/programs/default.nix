@@ -121,7 +121,5 @@ in
     pkgs-unstable.dms-shell
     ## Extras
     gnome-tweaks
-    protonvpn-gui
-    proton-pass
   ];
 }

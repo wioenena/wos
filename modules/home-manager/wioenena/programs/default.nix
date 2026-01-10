@@ -4,7 +4,6 @@
   imports = [
     ./zen-browser.nix
     ./zed-editor.nix
-    ./walker.nix
   ];
 
   programs = {

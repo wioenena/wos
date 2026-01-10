@@ -90,9 +90,6 @@
           default-rows = lib.gvariant.mkUint32 24;
         };
         # Extensions
-        "org/gnome/shell/extensions/workspace-indicator" = {
-          embed-previews = false;
-        };
         "org/gnome/shell/extensions/clipboard-indicator" = {
           notify-on-copy = true;
           clear-on-boot = true;

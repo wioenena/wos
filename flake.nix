@@ -60,6 +60,7 @@
             nixpkgs.config.allowUnfreePredicate = allowUnfreePredicate;
           }
 
+          inputs.walker.nixosModules.walker
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -68,7 +69,6 @@
 
             home-manager.sharedModules = [
               inputs.zen-browser.homeModules.default
-              inputs.walker.homeManagerModules.default
             ];
             home-manager.extraSpecialArgs = { inherit inputs pkgs-unstable; };
           }
