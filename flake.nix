@@ -22,10 +22,7 @@
       url = "github:abenz1267/walker";
       inputs.elephant.follows = "elephant";
     };
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell/stable";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    matugen.url = "github:/InioX/Matugen/v3.1.0";
   };
 
   outputs =

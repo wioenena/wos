@@ -37,7 +37,6 @@
             dash-to-dock.extensionUuid
             gsconnect.extensionUuid
             caffeine.extensionUuid
-            clipboard-indicator.extensionUuid
             lockkeys-vaina.extensionUuid
             desktop-icons-ng-ding.extensionUuid
             add-to-desktop.extensionUuid
@@ -90,10 +89,6 @@
           default-rows = lib.gvariant.mkUint32 24;
         };
         # Extensions
-        "org/gnome/shell/extensions/clipboard-indicator" = {
-          notify-on-copy = true;
-          clear-on-boot = true;
-        };
         "org/gnome/shell/extensions/dash-to-dock" = {
           dash-max-icon-size = lib.gvariant.mkInt32 40;
           custom-theme-shrink = true;

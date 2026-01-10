@@ -7,14 +7,9 @@
     noto-fonts-color-emoji
     font-awesome
     inter
-    roboto
     jetbrains-mono
     fira-code
-    iosevka
-    cascadia-code
     nerd-fonts.jetbrains-mono
-    nerd-fonts.caskaydia-cove
     nerd-fonts.fira-code
-    nerd-fonts.iosevka
   ];
 }

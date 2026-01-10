@@ -41,13 +41,12 @@ in
 
     fzf.keybindings = true;
     fzf.fuzzyCompletion = true;
-    obs-studio.enable = true;
     localsend.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
-    # Common for linux experience
-    coreutils-full
+    # --- Core System Utilities (GNU Standard) ---
+    coreutils
     gnutar
     findutils
     diffutils
@@ -58,68 +57,53 @@ in
     procps
     binutils
     file
-    dateutils
-    rsync
-    tree
-    ripgrep
-    wget
-    curl
     psmisc
-    feh
+    dateutils
+
+    # --- Modern CLI Tools (Better Alternatives) ---
+    ripgrep
+    eza
     fzf
     btop
-    fastfetch
-    eza
-    ## Common for wayland experience
+    jq
+    tree
+    stow
+
+    # --- Networking & Download ---
+    wget
+    curl
+    rsync
+    yt-dlp
+
+    # --- Wayland Desktop Environment Utilities ---
     wl-clipboard
     grim
     slurp
-    ## Tools
-    yt-dlp
-    jq
+    nwg-look
     playerctl
-    stow
-    clock-rs
-    cava
-    ## Home Manager
-    home-manager
-    ## For github
-    gh
 
-    # GUI
-    ## Audio
-    pavucontrol
-    easyeffects
-    ## Terminal
+    # --- Development & Editors ---
     alacritty
-    ## Gaming & Windows compatibility
-    (bottles.override {
-      removeWarningPopup = true;
-    })
-    heroic
-    prismlauncher
-    wineWowPackages.stableFull
-    wineWowPackages.waylandFull
-    winetricks
-    protonplus
-    mangohud
-    goverlay
-    ## Developer experience
     vscode
     zed-editor
     jetbrains-toolbox
     yaak
-    ## Browsers
+    gh
+
+    # --- Web Browsing ---
     brave
-    ## Contect creator
-    davinci-resolve
-    ## Tools
-    mpv
-    imhex
-    ## For window managers
-    quickshell # For dms-shell
-    pkgs-unstable.dms-shell
-    ## Extras
-    gnome-tweaks
+
+    # --- Ricing & Visuals ---
+    feh
+    fastfetch
+    cava
+    clock-rs
+
+    # --- Nix & System Management ---
+    home-manager
+
+    # --- Flake Inputs (Custom Packages) ---
+    inputs.awww.packages.${system}.awww
+    inputs.matugen.packages.${system}.default
   ];
 }

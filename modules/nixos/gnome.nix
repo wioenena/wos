@@ -6,7 +6,6 @@ let
     dash-to-dock
     gsconnect
     caffeine
-    clipboard-indicator
     lockkeys-vaina
     desktop-icons-ng-ding
     add-to-desktop
