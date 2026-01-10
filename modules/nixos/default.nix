@@ -3,7 +3,6 @@
   imports = [
     ./networking
     ./programs
-    ./services
     ./security
     ./virtualisation
     ./specialisations

@@ -40,6 +40,7 @@ let
     "com.getpostman.Postman"
     "me.iepure.devtoolbox"
     "net.werwolv.ImHex"
+    "org.gnome.Boxes"
 
     # --- Productivity & Office ---
     "md.obsidian.Obsidian"

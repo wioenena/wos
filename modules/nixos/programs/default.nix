@@ -15,6 +15,9 @@ in
     ./nix-ld.nix
     ./steam.nix
     ./neovim.nix
+    ./openssh.nix
+    ./flatpak.nix
+    ./gnome-keyring.nix
   ];
 
   programs = {
