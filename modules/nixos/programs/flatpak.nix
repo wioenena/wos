@@ -5,6 +5,9 @@ let
     "com.discordapp.Discord"
     "org.mozilla.Thunderbird"
 
+    # --- Networking & File Transfer ---
+    "org.qbittorrent.qBittorrent"
+
     # --- Graphics & Design ---
     "org.gimp.GIMP"
     "com.github.PintaProject.Pinta"
@@ -42,6 +45,7 @@ let
     "me.iepure.devtoolbox"
     "net.werwolv.ImHex"
     "org.gnome.Boxes"
+    "io.podman_desktop.PodmanDesktop"
 
     # --- Productivity & Office ---
     "md.obsidian.Obsidian"
